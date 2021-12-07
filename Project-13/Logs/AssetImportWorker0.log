@@ -738,3 +738,116 @@ Received Import Request.
 Start importing Assets/Scenes/Map3.unity using Guid(a726da9fb28944929b43bb4b8cfb39ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd74f2163a5650056cb6ce39c0173fb1a') in 0.004190 seconds 
   Import took 0.007644 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 96.563093 seconds.
+  path: Assets/Materials/Ground2.mat
+  artifactKey: Guid(b7038336f0acf427090c481c82b6e440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Ground2.mat using Guid(b7038336f0acf427090c481c82b6e440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1fc6c0ea18e8192c5aeb0903c821a9') in 0.015798 seconds 
+  Import took 0.018983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.888711 seconds.
+  path: Assets/Materials/Walls2.mat
+  artifactKey: Guid(f0faa51725c1843dabba4c545e92f418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Walls2.mat using Guid(f0faa51725c1843dabba4c545e92f418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46fcc8b1cc9bf64c322c40fde5fe1f8b') in 0.019148 seconds 
+  Import took 0.023059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 253.026893 seconds.
+  path: Assets/Prefabs/Battlefield/Walls
+  artifactKey: Guid(e2b43436cd00b4a4b862c8c87ba1cb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Battlefield/Walls using Guid(e2b43436cd00b4a4b862c8c87ba1cb0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05cbfc083e2b82b610b83a48a6ce85c6') in 0.002195 seconds 
+  Import took 0.005978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.289063 seconds.
+  path: Assets/Prefabs/Battlefield/Walls/Boundary
+  artifactKey: Guid(5b977795886134b788daafac8dcd952d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Battlefield/Walls/Boundary using Guid(5b977795886134b788daafac8dcd952d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a38a50cd090fb0aab6e893c4d299c804') in 0.001466 seconds 
+  Import took 0.005528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 813.186279 seconds.
+  path: Assets/Prefabs/Battlefield/Spawnpoints/Spawnpoints.prefab
+  artifactKey: Guid(0770bab94552d4127b159e0f9eda317d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Battlefield/Spawnpoints/Spawnpoints.prefab using Guid(0770bab94552d4127b159e0f9eda317d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '793ccf0aa54b67cf0cc5e62b461b73a0') in 0.021509 seconds 
+  Import took 0.026120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.427927 seconds.
+  path: Assets/Prefabs/Terrain/Terrain
+  artifactKey: Guid(5743e683df64448ccb865b6c9ef63fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain/Terrain using Guid(5743e683df64448ccb865b6c9ef63fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c3e521d8710f104549bbb9f091de4b') in 0.001898 seconds 
+  Import took 0.005582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 268.420872 seconds.
+  path: Assets/Materials/Ground2.mat
+  artifactKey: Guid(b7038336f0acf427090c481c82b6e440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Ground2.mat using Guid(b7038336f0acf427090c481c82b6e440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806750a5f6180b34e51e939d672fe915') in 0.024556 seconds 
+  Import took 0.028091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000432 seconds.
+  path: Assets/Materials/Walls2.mat
+  artifactKey: Guid(f0faa51725c1843dabba4c545e92f418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Walls2.mat using Guid(f0faa51725c1843dabba4c545e92f418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '943659d766fb2af575825d8d50389d32') in 0.027572 seconds 
+  Import took 0.031420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000744 seconds.
+  path: Assets/Materials/Ground2.mat
+  artifactKey: Guid(b7038336f0acf427090c481c82b6e440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Ground2.mat using Guid(b7038336f0acf427090c481c82b6e440) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806750a5f6180b34e51e939d672fe915') in 0.021568 seconds 
+  Import took 0.027948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000476 seconds.
+  path: Assets/Materials/Walls2.mat
+  artifactKey: Guid(f0faa51725c1843dabba4c545e92f418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Walls2.mat using Guid(f0faa51725c1843dabba4c545e92f418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '943659d766fb2af575825d8d50389d32') in 0.009964 seconds 
+  Import took 0.012827 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1160.866443 seconds.
+  path: Assets/Prefabs/Battlefield/Pickups/Models/RailgunPickupModel.prefab
+  artifactKey: Guid(2a53f785ce3044851ba36a0a7ab28fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Battlefield/Pickups/Models/RailgunPickupModel.prefab using Guid(2a53f785ce3044851ba36a0a7ab28fcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7fc677a418ccaaa0fbb6a62fe40a61c') in 0.015516 seconds 
+  Import took 0.019398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 714.139640 seconds.
+  path: Assets/Prefabs/Terrain
+  artifactKey: Guid(b80df6bc777c0403085ab9428446ec78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Terrain using Guid(b80df6bc777c0403085ab9428446ec78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb18906a954eaedbcaadbad6c4033220') in 0.002220 seconds 
+  Import took 0.007828 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1027.432241 seconds.
+  path: Assets/Materials/Middle Ground.mat
+  artifactKey: Guid(fb0044fdd90b24d1abf48dfd879e1584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Middle Ground.mat using Guid(fb0044fdd90b24d1abf48dfd879e1584) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee1b2f95960adc142395e535af1b683') in 0.057902 seconds 
+  Import took 0.088308 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 118.230912 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(8e0ff3259bbfb46deb21029ce0674814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(8e0ff3259bbfb46deb21029ce0674814) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1e21b627166db6133b93e2c09fce203') in 0.159084 seconds 
+  Import took 0.162985 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
