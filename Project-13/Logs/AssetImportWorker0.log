@@ -242,3 +242,19 @@ Received Import Request.
 Start importing Assets/Materials/Walls3.mat using Guid(067a2fe819f4a44f182b0d906329d9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4035be725963fa0cf8726172b0fd620a') in 0.011368 seconds 
   Import took 0.014287 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 2447.037706 seconds.
+  path: Assets/Scenes/Map2.unity
+  artifactKey: Guid(848879ffaa50645a991ff7e4670fed9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map2.unity using Guid(848879ffaa50645a991ff7e4670fed9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc228a62a5b7b4d715790ee2cd0a128') in 0.010851 seconds 
+  Import took 0.039247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3362.673825 seconds.
+  path: Assets/Scenes/Map2.unity
+  artifactKey: Guid(848879ffaa50645a991ff7e4670fed9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map2.unity using Guid(848879ffaa50645a991ff7e4670fed9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c916bfdcbf933f2da60e180d483b333') in 0.011455 seconds 
+  Import took 0.039061 seconds .
+
