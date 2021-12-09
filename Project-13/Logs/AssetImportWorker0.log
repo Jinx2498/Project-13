@@ -452,3 +452,19 @@ Received Import Request.
 Start importing Assets/Scenes/Map3.unity using Guid(a726da9fb28944929b43bb4b8cfb39ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73560e4d7d7336979a9821ed2a90f7ab') in 0.003844 seconds 
   Import took 0.008077 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 2243.240084 seconds.
+  path: Assets/Scenes/Map3.unity
+  artifactKey: Guid(a726da9fb28944929b43bb4b8cfb39ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map3.unity using Guid(a726da9fb28944929b43bb4b8cfb39ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe485714995bd080c29c1e8fd7ee0738') in 0.005675 seconds 
+  Import took 0.010282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000667 seconds.
+  path: Assets/Scenes/Map3.unity
+  artifactKey: Guid(a726da9fb28944929b43bb4b8cfb39ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Map3.unity using Guid(a726da9fb28944929b43bb4b8cfb39ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe485714995bd080c29c1e8fd7ee0738') in 0.003918 seconds 
+  Import took 0.008957 seconds .
+
