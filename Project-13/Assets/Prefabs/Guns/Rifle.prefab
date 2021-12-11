@@ -297,7 +297,7 @@ MonoBehaviour:
   damage: 15
   range: 100
   impactForce: 30
-  fireRate: 15
+  fireRate: 10
   fpsCam: {fileID: 0}
   muzzleFlash: {fileID: 4744866912887791195, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
   impactEffect: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
