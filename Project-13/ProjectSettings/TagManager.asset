@@ -3,12 +3,19 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
+  - Blue Spawnpoint
+  - Red Spawnpoint
+  - Railgun Pickup
+  - Shotgun Pickup
+  - Rocket Launcher Pickup
+  - Health Pickup
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Weapons
   - Water
   - UI
   - Ground

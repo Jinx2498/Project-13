@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 420747264998735653}
   - component: {fileID: 420747264998735652}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Heavy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,9 +54,14 @@ MonoBehaviour:
   range: 100
   impactForce: 40
   fireRate: 8
+  maxAmmo: 10
+  reloadTime: 1
   fpsCam: {fileID: 0}
   muzzleFlash: {fileID: 4744866912887791195, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
   impactEffect: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+  reloadAnim: {fileID: 0}
+  scopeAnim: {fileID: 0}
+  scopeOverlay: {fileID: 0}
 --- !u!1 &420747265114625173
 GameObject:
   m_ObjectHideFlags: 0
@@ -68,7 +73,7 @@ GameObject:
   - component: {fileID: 420747265114625172}
   - component: {fileID: 420747265114625174}
   - component: {fileID: 420747265114625175}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C_MainBattery
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,7 +154,7 @@ GameObject:
   - component: {fileID: 420747265202118773}
   - component: {fileID: 420747265202118775}
   - component: {fileID: 420747265202118772}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C_Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +235,7 @@ GameObject:
   - component: {fileID: 420747265377555347}
   - component: {fileID: 420747265377555349}
   - component: {fileID: 420747265377555346}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -311,7 +316,7 @@ GameObject:
   - component: {fileID: 420747266085618500}
   - component: {fileID: 420747266085618502}
   - component: {fileID: 420747266085618503}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C_Mag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -392,7 +397,7 @@ GameObject:
   - component: {fileID: 420747266460189350}
   - component: {fileID: 420747266460189352}
   - component: {fileID: 420747266460189353}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -473,7 +478,7 @@ GameObject:
   - component: {fileID: 420747266753250077}
   - component: {fileID: 420747266753250079}
   - component: {fileID: 420747266753250076}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -554,7 +559,7 @@ GameObject:
   - component: {fileID: 420747266942290836}
   - component: {fileID: 420747266942290838}
   - component: {fileID: 420747266942290839}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: C_BeamBattery
   m_TagString: Untagged
   m_Icon: {fileID: 0}

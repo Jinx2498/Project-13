@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,9 +130,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 559232634}
     m_Modifications:
+    - target: {fileID: 6570110173976958012, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570110174094802128, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570110174423823047, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6570110174449187409, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
       propertyPath: m_Name
       value: Rifle
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570110174449187409, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6570110174449187410, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
       propertyPath: m_RootOrder
@@ -187,9 +203,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 766778825}
     - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 559232636}
+    - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
       propertyPath: fireRate
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: scopeAnim
+      value: 
+      objectReference: {fileID: 559232636}
+    - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 766778825}
+    - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: reloadAnim
+      value: 
+      objectReference: {fileID: 559232636}
     - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
       propertyPath: muzzleFlash
       value: 
@@ -198,6 +230,34 @@ PrefabInstance:
       propertyPath: impactEffect
       value: 
       objectReference: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+    - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: scopeOverlay
+      value: 
+      objectReference: {fileID: 113544386}
+    - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: weaponCamera
+      value: 
+      objectReference: {fileID: 2081786511}
+    - target: {fileID: 6570110174465456153, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570110174519204505, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570110174883397031, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570110174888156927, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6570110175294953005, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
 --- !u!1 &8360254
@@ -999,6 +1059,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6437047091816575235, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
   m_PrefabInstance: {fileID: 840515787}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &113544386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 113544387}
+  - component: {fileID: 113544389}
+  - component: {fileID: 113544388}
+  m_Layer: 5
+  m_Name: ScopeOverlay
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &113544387
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113544386}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 397104989}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 2100, y: 968}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &113544388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113544386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 42d5891e4563fb74dbba9abc368dd924, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &113544389
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113544386}
+  m_CullTransparentMesh: 1
 --- !u!1 &139905222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1120,6 +1255,10 @@ PrefabInstance:
     - target: {fileID: 4744866912887791198, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
       propertyPath: m_Name
       value: MuzzleFlash
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744866912887791198, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4744866912887791198, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
       propertyPath: m_IsActive
@@ -2157,6 +2296,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Heavy
       objectReference: {fileID: 0}
+    - target: {fileID: 420747264998735650, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
       propertyPath: damage
       value: 20
@@ -2166,9 +2309,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 766778825}
     - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 559232636}
+    - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
       propertyPath: fireRate
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: scopeAnim
+      value: 
+      objectReference: {fileID: 559232636}
+    - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 766778825}
+    - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: reloadAnim
+      value: 
+      objectReference: {fileID: 559232636}
     - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
       propertyPath: impactForce
       value: 40
@@ -2181,6 +2340,14 @@ PrefabInstance:
       propertyPath: impactEffect
       value: 
       objectReference: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+    - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: scopeOverlay
+      value: 
+      objectReference: {fileID: 113544386}
+    - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: weaponCamera
+      value: 
+      objectReference: {fileID: 2081786511}
     - target: {fileID: 420747264998735653, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2224,6 +2391,34 @@ PrefabInstance:
     - target: {fileID: 420747264998735653, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420747265114625173, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 420747265202118770, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 420747265377555344, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 420747266085618501, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 420747266460189351, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 420747266753250074, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 420747266942290837, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
@@ -2580,6 +2775,10 @@ PrefabInstance:
     - target: {fileID: 4744866912887791198, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
       propertyPath: m_Name
       value: MuzzleFlash
+      objectReference: {fileID: 0}
+    - target: {fileID: 4744866912887791198, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
@@ -3148,12 +3347,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3192,6 +3391,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 636065037}
+  - {fileID: 113544387}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3830,6 +4030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MuzzleFlash
       objectReference: {fileID: 0}
+    - target: {fileID: 4744866912887791198, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
 --- !u!1 &559232633
@@ -3842,7 +4046,8 @@ GameObject:
   m_Component:
   - component: {fileID: 559232634}
   - component: {fileID: 559232635}
-  m_Layer: 0
+  - component: {fileID: 559232636}
+  m_Layer: 3
   m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3865,7 +4070,7 @@ Transform:
   - {fileID: 1556932543}
   - {fileID: 108370594}
   m_Father: {fileID: 766778826}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &559232635
 MonoBehaviour:
@@ -3880,6 +4085,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedWeapon: 0
+--- !u!95 &559232636
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559232633}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a406dd3d2ecc6a24db07d7f50863dded, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &569596962
 GameObject:
   m_ObjectHideFlags: 0
@@ -4814,7 +5038,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.01
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -4822,7 +5046,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 119
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -4845,6 +5069,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 2081786513}
   - {fileID: 559232634}
   m_Father: {fileID: 1348042196}
   m_RootOrder: 0
@@ -5501,6 +5726,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 559232634}
     m_Modifications:
+    - target: {fileID: 6437047091336666354, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047091384630427, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047091791403872, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
       propertyPath: damage
       value: 80
@@ -5510,9 +5747,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 766778825}
     - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 559232636}
+    - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
       propertyPath: fireRate
       value: 0.6
       objectReference: {fileID: 0}
+    - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: scopeAnim
+      value: 
+      objectReference: {fileID: 559232636}
+    - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 766778825}
+    - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: reloadAnim
+      value: 
+      objectReference: {fileID: 559232636}
     - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
       propertyPath: impactForce
       value: 60
@@ -5525,6 +5778,14 @@ PrefabInstance:
       propertyPath: impactEffect
       value: 
       objectReference: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+    - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: scopeOverlay
+      value: 
+      objectReference: {fileID: 113544386}
+    - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: weaponCamera
+      value: 
+      objectReference: {fileID: 2081786511}
     - target: {fileID: 6437047091816575235, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5572,6 +5833,42 @@ PrefabInstance:
     - target: {fileID: 6437047091816575260, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
       propertyPath: m_Name
       value: Sniper
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047091816575260, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047091906504117, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047091950689049, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047092287191463, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047092622875494, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047092903912849, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047092986397198, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047093307395117, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437047093422166407, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
@@ -6611,6 +6908,10 @@ PrefabInstance:
     - target: {fileID: 7245774734098654718, guid: 603a6f9607bb7974e83abf586f0d80f8, type: 3}
       propertyPath: m_Name
       value: Point Light
+      objectReference: {fileID: 0}
+    - target: {fileID: 7245774734098654718, guid: 603a6f9607bb7974e83abf586f0d80f8, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7245774734098654718, guid: 603a6f9607bb7974e83abf586f0d80f8, type: 3}
       propertyPath: m_IsActive
@@ -8698,6 +8999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MuzzleFlash
       objectReference: {fileID: 0}
+    - target: {fileID: 4744866912887791198, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
 --- !u!1 &1553345997
@@ -10182,6 +10487,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 559232634}
     m_Modifications:
+    - target: {fileID: 3089628193775561842, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3089628193812881544, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -10230,6 +10539,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pistol
       objectReference: {fileID: 0}
+    - target: {fileID: 3089628193812881545, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
       propertyPath: damage
       value: 25
@@ -10239,9 +10552,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 766778825}
     - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 559232636}
+    - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
       propertyPath: fireRate
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: scopeAnim
+      value: 
+      objectReference: {fileID: 559232636}
+    - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 766778825}
+    - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: reloadAnim
+      value: 
+      objectReference: {fileID: 559232636}
     - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
       propertyPath: muzzleFlash
       value: 
@@ -10250,6 +10579,42 @@ PrefabInstance:
       propertyPath: impactEffect
       value: 
       objectReference: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+    - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: scopeOverlay
+      value: 
+      objectReference: {fileID: 113544386}
+    - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: weaponCamera
+      value: 
+      objectReference: {fileID: 2081786511}
+    - target: {fileID: 3089628194029412329, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3089628194561719438, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3089628194574576778, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3089628194660709267, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3089628194810245486, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3089628194844953337, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3089628194897872172, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
 --- !u!1001 &1740061525
@@ -12099,6 +12464,80 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080748415}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2081786511
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2081786513}
+  - component: {fileID: 2081786512}
+  m_Layer: 0
+  m_Name: WeaponCamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &2081786512
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081786511}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 3
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.01
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 8
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &2081786513
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081786511}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 766778826}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2097178518
 PrefabInstance:
   m_ObjectHideFlags: 0

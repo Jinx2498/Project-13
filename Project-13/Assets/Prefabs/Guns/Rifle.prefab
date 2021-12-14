@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6570110173976958013}
   - component: {fileID: 6570110173976958015}
   - component: {fileID: 6570110173976958014}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: R_Clip2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 6570110174094802129}
   - component: {fileID: 6570110174094802131}
   - component: {fileID: 6570110174094802130}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: R_Clip1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 6570110174423823064}
   - component: {fileID: 6570110174423823066}
   - component: {fileID: 6570110174423823065}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: R_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6570110174449187410}
   - component: {fileID: 6570110174449187411}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Rifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -298,9 +298,14 @@ MonoBehaviour:
   range: 100
   impactForce: 30
   fireRate: 10
+  maxAmmo: 10
+  reloadTime: 1
   fpsCam: {fileID: 0}
   muzzleFlash: {fileID: 4744866912887791195, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
   impactEffect: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+  reloadAnim: {fileID: 0}
+  scopeAnim: {fileID: 0}
+  scopeOverlay: {fileID: 0}
 --- !u!1 &6570110174465456153
 GameObject:
   m_ObjectHideFlags: 0
@@ -312,7 +317,7 @@ GameObject:
   - component: {fileID: 6570110174465456154}
   - component: {fileID: 6570110174465456156}
   - component: {fileID: 6570110174465456155}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: R_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +398,7 @@ GameObject:
   - component: {fileID: 6570110174519204506}
   - component: {fileID: 6570110174519204508}
   - component: {fileID: 6570110174519204507}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: R_Grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +479,7 @@ GameObject:
   - component: {fileID: 6570110174883397048}
   - component: {fileID: 6570110174883397050}
   - component: {fileID: 6570110174883397049}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: R_FusionSource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +560,7 @@ GameObject:
   - component: {fileID: 6570110174888156912}
   - component: {fileID: 6570110174888156914}
   - component: {fileID: 6570110174888156913}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: R_Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +641,7 @@ GameObject:
   - component: {fileID: 6570110175294953006}
   - component: {fileID: 6570110175294952992}
   - component: {fileID: 6570110175294953007}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: R_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3089628193775561841}
   - component: {fileID: 3089628193775561847}
   - component: {fileID: 3089628193775561840}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3089628193812881544}
   - component: {fileID: 3089628193812881551}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Pistol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,9 +136,14 @@ MonoBehaviour:
   range: 100
   impactForce: 30
   fireRate: 4
+  maxAmmo: 10
+  reloadTime: 1
   fpsCam: {fileID: 0}
   muzzleFlash: {fileID: 4744866912887791195, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
   impactEffect: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+  reloadAnim: {fileID: 0}
+  scopeAnim: {fileID: 0}
+  scopeOverlay: {fileID: 0}
 --- !u!1 &3089628194029412329
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,7 +155,7 @@ GameObject:
   - component: {fileID: 3089628194029412328}
   - component: {fileID: 3089628194029412334}
   - component: {fileID: 3089628194029412335}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +236,7 @@ GameObject:
   - component: {fileID: 3089628194561719437}
   - component: {fileID: 3089628194561719427}
   - component: {fileID: 3089628194561719436}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_Slide
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +317,7 @@ GameObject:
   - component: {fileID: 3089628194574576777}
   - component: {fileID: 3089628194574576783}
   - component: {fileID: 3089628194574576776}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +398,7 @@ GameObject:
   - component: {fileID: 3089628194660709266}
   - component: {fileID: 3089628194660709264}
   - component: {fileID: 3089628194660709265}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_Sight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -474,7 +479,7 @@ GameObject:
   - component: {fileID: 3089628194810245485}
   - component: {fileID: 3089628194810245475}
   - component: {fileID: 3089628194810245484}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -555,7 +560,7 @@ GameObject:
   - component: {fileID: 3089628194844953336}
   - component: {fileID: 3089628194844953342}
   - component: {fileID: 3089628194844953343}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +641,7 @@ GameObject:
   - component: {fileID: 3089628194897872163}
   - component: {fileID: 3089628194897872161}
   - component: {fileID: 3089628194897872162}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: P_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}

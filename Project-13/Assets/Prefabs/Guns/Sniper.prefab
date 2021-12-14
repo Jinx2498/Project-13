@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6437047091336666353}
   - component: {fileID: 6437047091336666359}
   - component: {fileID: 6437047091336666352}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 6437047091384630426}
   - component: {fileID: 6437047091384630424}
   - component: {fileID: 6437047091384630425}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_Clip1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 6437047091791403879}
   - component: {fileID: 6437047091791403877}
   - component: {fileID: 6437047091791403878}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6437047091816575235}
   - component: {fileID: 6437047091816575234}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sniper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,9 +301,14 @@ MonoBehaviour:
   range: 100
   impactForce: 60
   fireRate: 0.6
+  maxAmmo: 10
+  reloadTime: 1
   fpsCam: {fileID: 0}
   muzzleFlash: {fileID: 4744866912887791195, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
   impactEffect: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+  reloadAnim: {fileID: 0}
+  scopeAnim: {fileID: 0}
+  scopeOverlay: {fileID: 0}
 --- !u!1 &6437047091906504117
 GameObject:
   m_ObjectHideFlags: 0
@@ -315,7 +320,7 @@ GameObject:
   - component: {fileID: 6437047091906504116}
   - component: {fileID: 6437047091906504122}
   - component: {fileID: 6437047091906504123}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_Scope
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -396,7 +401,7 @@ GameObject:
   - component: {fileID: 6437047091950689048}
   - component: {fileID: 6437047091950689054}
   - component: {fileID: 6437047091950689055}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_Grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -477,7 +482,7 @@ GameObject:
   - component: {fileID: 6437047092287191462}
   - component: {fileID: 6437047092287191460}
   - component: {fileID: 6437047092287191461}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_FusionCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -558,7 +563,7 @@ GameObject:
   - component: {fileID: 6437047092622875493}
   - component: {fileID: 6437047092622875499}
   - component: {fileID: 6437047092622875492}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_Hammer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -639,7 +644,7 @@ GameObject:
   - component: {fileID: 6437047092903912848}
   - component: {fileID: 6437047092903912854}
   - component: {fileID: 6437047092903912855}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -720,7 +725,7 @@ GameObject:
   - component: {fileID: 6437047092986397197}
   - component: {fileID: 6437047092986397299}
   - component: {fileID: 6437047092986397196}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_FusionCore1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -801,7 +806,7 @@ GameObject:
   - component: {fileID: 6437047093307395116}
   - component: {fileID: 6437047093307395090}
   - component: {fileID: 6437047093307395091}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -882,7 +887,7 @@ GameObject:
   - component: {fileID: 6437047093422166406}
   - component: {fileID: 6437047093422166404}
   - component: {fileID: 6437047093422166405}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: S_Clip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
