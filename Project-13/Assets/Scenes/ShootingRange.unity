@@ -219,6 +219,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 766778825}
     - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: recoilAnim
+      value: 
+      objectReference: {fileID: 559232636}
+    - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
       propertyPath: reloadAnim
       value: 
       objectReference: {fileID: 559232636}
@@ -2324,6 +2328,10 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 766778825}
+    - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: recoilAnim
+      value: 
+      objectReference: {fileID: 559232636}
     - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
       propertyPath: reloadAnim
       value: 
@@ -5762,6 +5770,10 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 766778825}
+    - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: recoilAnim
+      value: 
+      objectReference: {fileID: 559232636}
     - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
       propertyPath: reloadAnim
       value: 
@@ -10567,6 +10579,10 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 766778825}
+    - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: recoilAnim
+      value: 
+      objectReference: {fileID: 559232636}
     - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
       propertyPath: reloadAnim
       value: 
