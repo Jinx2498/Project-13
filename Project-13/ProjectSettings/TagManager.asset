@@ -11,6 +11,8 @@ TagManager:
   - Shotgun Pickup
   - Rocket Launcher Pickup
   - Health Pickup
+  - Red Teleport 1
+  - Red Teleport 2
   layers:
   - Default
   - TransparentFX
