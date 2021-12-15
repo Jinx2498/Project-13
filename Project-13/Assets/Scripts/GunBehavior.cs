@@ -20,6 +20,7 @@ public class GunBehavior : MonoBehaviour
 
     private float nextTimeToFire = 0f;      //Fire rate cap
 
+    public Animator recoilAnim;             //Recoil animation
     public Animator reloadAnim;             //Reload animation
     public Animator scopeAnim;              //Scope animation
 
@@ -121,12 +122,16 @@ public class GunBehavior : MonoBehaviour
 
     void Shoot()
     {
-        muzzleFlash.Play();     //Show flash when fired
+        muzzleFlash.Play();                 //Show flash when fired
+        recoilAnim.ResetTrigger("Fired");   //Recoil animation
+        recoilAnim.SetTrigger("Fired");     //Reset recoil Animation
 
         currentAmmo--;
 
         RaycastHit hit;
-
+        
+        
+        
         //If aimed at an object when fired, hit is registered
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
