@@ -1095,19 +1095,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a12a6df1fe650d441955e878d144f941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instantTeleport: 0
+  instantTeleport: 1
   randomTeleport: 0
   buttonTeleport: 0
   buttonName: 
   delayedTeleport: 0
   teleportTime: 3
-  objectTag: if empty, any object will tp
-  destinationPad: []
+  objectTag: 
+  destinationPad:
+  - {fileID: 2053014493}
   teleportationHeightOffset: 1
   arrived: 0
-  teleportSound: {fileID: 0}
-  teleportPadSound: {fileID: 0}
+  teleportSound: {fileID: 1572841410}
+  teleportPadSound: {fileID: 1338776635}
   teleportPadOn: 1
+--- !u!65 &106326306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106326303}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.726412, y: 4.726413, z: 0.30055705}
+  m_Center: {x: 0, y: 0, z: 0.15286364}
 --- !u!1 &106410027
 GameObject:
   m_ObjectHideFlags: 0
@@ -23391,6 +23405,19 @@ MonoBehaviour:
   teleportSound: {fileID: 1572841410}
   teleportPadSound: {fileID: 1338776635}
   teleportPadOn: 1
+--- !u!65 &1021720865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021720862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.726412, y: 4.726413, z: 0.30055705}
+  m_Center: {x: 0, y: 0, z: 0.15286364}
 --- !u!1 &1023126334
 GameObject:
   m_ObjectHideFlags: 0
@@ -27139,6 +27166,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: da35992fbe2e75d40b634d87d754fd41, type: 3}
   m_PrefabInstance: {fileID: 465914642}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1460922621
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460922620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.726412, y: 4.726413, z: 0.30055705}
+  m_Center: {x: 0, y: -0.0000019073486, z: 0.15286149}
 --- !u!4 &1460922624 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: da35992fbe2e75d40b634d87d754fd41, type: 3}
@@ -35960,19 +36000,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a12a6df1fe650d441955e878d144f941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  instantTeleport: 0
+  instantTeleport: 1
   randomTeleport: 0
   buttonTeleport: 0
   buttonName: 
   delayedTeleport: 0
   teleportTime: 3
-  objectTag: if empty, any object will tp
-  destinationPad: []
+  objectTag: 
+  destinationPad:
+  - {fileID: 106326304}
   teleportationHeightOffset: 1
   arrived: 0
-  teleportSound: {fileID: 0}
-  teleportPadSound: {fileID: 0}
+  teleportSound: {fileID: 1572841410}
+  teleportPadSound: {fileID: 1338776635}
   teleportPadOn: 1
+--- !u!65 &2053014495
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053014492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.726412, y: 4.726413, z: 0.30055705}
+  m_Center: {x: 0, y: -0.0000019073486, z: 0.15286149}
 --- !u!1001 &2065111057
 PrefabInstance:
   m_ObjectHideFlags: 0
