@@ -31,6 +31,8 @@ public class GunBehavior : MonoBehaviour
     public float scopedFOV = 15f;
     private float normalFOV;
 
+    public Recoil recoilScript;
+
     void Start()
     {
         currentAmmo = maxAmmo;
@@ -48,6 +50,7 @@ public class GunBehavior : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))       //Aim down scope
         {
             isScoped = !isScoped;
+            recoilScript.isADS = !recoilScript.isADS;
             scopeAnim.SetBool("Scoped", isScoped);
 
             if (isScoped)
@@ -123,9 +126,10 @@ public class GunBehavior : MonoBehaviour
     void Shoot()
     {
         muzzleFlash.Play();                 //Show flash when fired
-        recoilAnim.ResetTrigger("Fired");   //Recoil animation
-        recoilAnim.SetTrigger("Fired");     //Reset recoil Animation
-
+        recoilAnim.ResetTrigger("Fired");   //Recoil gun animation
+        recoilAnim.SetTrigger("Fired");     //Reset recoil gun animation
+        recoilScript.RecoilFire();          //Recoil mouse animation
+        
         currentAmmo--;
 
         RaycastHit hit;

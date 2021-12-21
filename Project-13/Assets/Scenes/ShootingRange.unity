@@ -235,6 +235,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
     - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
+      propertyPath: recoilScript
+      value: 
+      objectReference: {fileID: 895506170}
+    - target: {fileID: 6570110174449187411, guid: 1f1ceca6930198746a75c5b08bf0b25e, type: 3}
       propertyPath: scopeOverlay
       value: 
       objectReference: {fileID: 113544386}
@@ -2642,6 +2646,10 @@ PrefabInstance:
       propertyPath: impactEffect
       value: 
       objectReference: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+    - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
+      propertyPath: recoilScript
+      value: 
+      objectReference: {fileID: 895506170}
     - target: {fileID: 420747264998735652, guid: 297e0bd704900f74d8418addb8e9771a, type: 3}
       propertyPath: scopeOverlay
       value: 
@@ -5843,13 +5851,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 766778823}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2081786513}
   - {fileID: 559232634}
-  m_Father: {fileID: 1348042196}
+  m_Father: {fileID: 895506169}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &766778827
@@ -6561,6 +6569,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
     - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
+      propertyPath: recoilScript
+      value: 
+      objectReference: {fileID: 895506170}
+    - target: {fileID: 6437047091816575234, guid: 0ab0d9949178927418131c44c200e59f, type: 3}
       propertyPath: scopeOverlay
       value: 
       objectReference: {fileID: 113544386}
@@ -7134,6 +7146,59 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 891642990}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &895506168
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895506169}
+  - component: {fileID: 895506170}
+  m_Layer: 0
+  m_Name: CameraRecoil
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895506169
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895506168}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 766778826}
+  m_Father: {fileID: 1532382357}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &895506170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895506168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2d723718d6e11438b4c2a331aff0bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isADS: 0
+  recoilX: -2
+  recoilY: 2
+  recoilZ: 0.35
+  adsRecoilX: -1.5
+  adsRecoilY: 1
+  adsRecoilZ: 0.3
+  snapiness: 6
+  returnSpeed: 4
 --- !u!1 &896214058
 GameObject:
   m_ObjectHideFlags: 0
@@ -10297,6 +10362,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519514030}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1532382356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1532382357}
+  m_Layer: 0
+  m_Name: CameraRotation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1532382357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532382356}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 895506169}
+  m_Father: {fileID: 1348042196}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1551364850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12031,6 +12127,10 @@ PrefabInstance:
       propertyPath: impactEffect
       value: 
       objectReference: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+    - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
+      propertyPath: recoilScript
+      value: 
+      objectReference: {fileID: 895506170}
     - target: {fileID: 3089628193812881551, guid: 72ee5c57fafae604880d356b6f918230, type: 3}
       propertyPath: scopeOverlay
       value: 

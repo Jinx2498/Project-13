@@ -62,6 +62,7 @@
     <Compile Include="Assets\Scripts\Destructible.cs" />
     <Compile Include="Assets\Scripts\Grenade.cs" />
     <Compile Include="Assets\Scripts\GrenadeThrower.cs" />
+    <Compile Include="Assets\Scripts\Recoil.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
