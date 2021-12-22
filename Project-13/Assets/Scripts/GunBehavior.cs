@@ -28,8 +28,10 @@ public class GunBehavior : MonoBehaviour
     public GameObject weaponCamera;
     public Camera mainCamera;
 
-    public float scopedFOV = 15f;
-    private float normalFOV;
+    public float scopedFOV = 15f;           //Scoped/ADS field of view
+    private float normalFOV;                //Regular field of view
+
+    public Recoil recoilScript;             //Recoil script
 
     void Start()
     {
@@ -48,6 +50,7 @@ public class GunBehavior : MonoBehaviour
         if (Input.GetButtonDown("Fire2"))       //Aim down scope
         {
             isScoped = !isScoped;
+            recoilScript.isADS = !recoilScript.isADS;   //Lowers recoil when ADS
             scopeAnim.SetBool("Scoped", isScoped);
 
             if (isScoped)
@@ -75,6 +78,13 @@ public class GunBehavior : MonoBehaviour
             nextTimeToFire = Time.time + 1f / fireRate;     //Fire rate
             Shoot();
         }
+
+        //Manual reload
+        if (Input.GetKey("r") && currentAmmo < maxAmmo)
+        {
+            StartCoroutine(Reload());
+            return;
+        }
     }
 
     IEnumerator OnScoped()
@@ -99,7 +109,11 @@ public class GunBehavior : MonoBehaviour
         isReloading = true;
         Debug.Log("Reloading...");
 
-        yield return new WaitForSeconds(.25f);              //Added lag before reload time
+        if(currentAmmo == 0)
+        {
+            yield return new WaitForSeconds(.25f);              //Added lag before reload time
+        }
+        
         scopeAnim.SetBool("Scoped", false);                 //Back out of scope
         OnUnscoped();                                       //Back out of scope overlay
         reloadAnim.SetBool("Reloading", true);              //Begin reloading
@@ -123,14 +137,13 @@ public class GunBehavior : MonoBehaviour
     void Shoot()
     {
         muzzleFlash.Play();                 //Show flash when fired
-        recoilAnim.ResetTrigger("Fired");   //Recoil animation
-        recoilAnim.SetTrigger("Fired");     //Reset recoil Animation
-
+        recoilAnim.ResetTrigger("Fired");   //Recoil gun animation
+        recoilAnim.SetTrigger("Fired");     //Reset recoil gun animation
+        recoilScript.RecoilFire();          //Recoil mouse animation
+        
         currentAmmo--;
 
         RaycastHit hit;
-        
-        
         
         //If aimed at an object when fired, hit is registered
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
