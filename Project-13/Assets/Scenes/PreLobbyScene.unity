@@ -217,6 +217,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offsetX: 0
   offsetY: 0
+  joinAddr: 
+  selectedMap: 0
+  mapNames:
+  - 'Map 1: ''Plains'''
+  - 'Map 2: ''Fountain'''
+  - 'Map 3: ''Complex'''
 --- !u!4 &527156778
 Transform:
   m_ObjectHideFlags: 0
