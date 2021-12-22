@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class RifleWeapon : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class RifleWeapon : MonoBehaviour
     private int maxAmmo = 20;
     public int rifleAmmo;
     public int rifleAmmoReserve = 100;
+    public Text ammoDisplay;
+    public Text totalAmmoDisplay;
 
     // private int currentAmmo;
     public float reloadTime = 1f;
@@ -50,6 +53,9 @@ public class RifleWeapon : MonoBehaviour
 
     void Update()
     {
+        ammoDisplay.text = rifleAmmo.ToString();
+        totalAmmoDisplay.text = rifleAmmoReserve.ToString();
+
         if (Input.GetButtonDown("Fire2"))       //Aim down scope
         {
             isScoped = !isScoped;

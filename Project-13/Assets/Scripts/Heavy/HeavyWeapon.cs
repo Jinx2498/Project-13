@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class HeavyWeapon : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class HeavyWeapon : MonoBehaviour
     private int maxAmmo = 30;
     public int heavyAmmo;
     public int heavyAmmoReserve = 120;
+    public Text ammoDisplay;
+    public Text totalAmmoDisplay;
 
     // private int currentAmmo;
     private float reloadTime = 3f;
@@ -50,6 +53,9 @@ public class HeavyWeapon : MonoBehaviour
 
     void Update()
     {
+        ammoDisplay.text = heavyAmmo.ToString();
+        totalAmmoDisplay.text = heavyAmmoReserve.ToString();
+
         if (Input.GetButtonDown("Fire2"))       //Aim down scope
         {
             isScoped = !isScoped;
