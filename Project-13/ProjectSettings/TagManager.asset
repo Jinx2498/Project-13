@@ -21,6 +21,7 @@ TagManager:
   - HeavyAmmo
   - RifleAmmo
   - PistolAmmo
+  - HealthPickup
   layers:
   - Default
   - TransparentFX
