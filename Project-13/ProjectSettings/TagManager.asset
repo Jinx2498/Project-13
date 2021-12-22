@@ -13,6 +13,7 @@ TagManager:
   - Health Pickup
   - Red Teleport 1
   - Red Teleport 2
+  - MainMenuMusic
   layers:
   - Default
   - TransparentFX
