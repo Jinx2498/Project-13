@@ -132,10 +132,10 @@ public class HeavyWeapon : MonoBehaviour
             StartCoroutine(OnScoped());                     //Scope overlay applied if player was scoped in before reloading
         }
 
-        if(heavyAmmoReserve > 10)
+        if(heavyAmmoReserve > maxAmmo)
         {
-            heavyAmmo = 10;
-            heavyAmmoReserve -= 10;
+            heavyAmmoReserve -= maxAmmo - heavyAmmo;
+            heavyAmmo = maxAmmo;
         } else
         {
             heavyAmmo = heavyAmmoReserve;

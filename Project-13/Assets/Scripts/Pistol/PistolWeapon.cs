@@ -134,10 +134,10 @@ public class PistolWeapon : MonoBehaviour
             StartCoroutine(OnScoped());                     //Scope overlay applied if player was scoped in before reloading
         }
 
-        if (pistolAmmoReserve > 10)
+        if (pistolAmmoReserve > maxAmmo)
         {
-            pistolAmmo = 10;
-            pistolAmmoReserve -= 10;
+            pistolAmmoReserve -= maxAmmo - pistolAmmo;
+            pistolAmmo = maxAmmo;
         }
         else
         {

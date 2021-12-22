@@ -134,10 +134,10 @@ public class SniperWeapon : MonoBehaviour
             StartCoroutine(OnScoped());                     //Scope overlay applied if player was scoped in before reloading
         }
 
-        if (sniperAmmoReserve > 10)
+        if (sniperAmmoReserve > maxAmmo)
         {
-            sniperAmmo = 10;
-            sniperAmmoReserve -= 10;
+            sniperAmmoReserve -= maxAmmo - sniperAmmo;
+            sniperAmmo = maxAmmo;
         }
         else
         {
