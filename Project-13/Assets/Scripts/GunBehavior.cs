@@ -9,7 +9,15 @@ public class GunBehavior : MonoBehaviour
     public float fireRate = 15f;
 
     public int maxAmmo = 10;
-    private int currentAmmo;
+    public int sniperAmmo = 0;
+    public int rifleAmmo = 0;
+    public int pistolAmmo = 0;
+    public int heavyAmmo = 0;
+    public int sniperAmmoReserve = 0;
+    public int rifleAmmoReserve = 0;
+    public int pistolAmmoReserve = 0;
+    public int heavyAmmoReserve = 0;
+    // private int currentAmmo;
     public float reloadTime = 1f;
     private bool isReloading = false;
     private bool isScoped = false;
@@ -35,7 +43,10 @@ public class GunBehavior : MonoBehaviour
 
     void Start()
     {
-        currentAmmo = maxAmmo;
+        sniperAmmo = maxAmmo;
+        rifleAmmo = maxAmmo;
+        pistolAmmo = maxAmmo;
+        heavyAmmo = maxAmmo;
         normalFOV = mainCamera.fieldOfView;               //Initialize the normal field of view
     }
 
@@ -61,14 +72,34 @@ public class GunBehavior : MonoBehaviour
             }
         }
 
+        if(gameObject)
+
         if (isReloading)
         {
             return;                             //Ignores command to reload if already reloading
         }
 
-        if(currentAmmo <= 0)
+        if(sniperAmmo == 0 && sniperAmmoReserve >= 10)
         {
-            StartCoroutine(Reload());           //Begins reloading
+            StartCoroutine(ReloadSniper());           //Begins reloading
+            return;
+        }
+
+        if(pistolAmmo == 0 && pistolAmmoReserve >= 10)
+        {
+            StartCoroutine(ReloadPistol());           //Begins reloading
+            return;
+        }
+
+        if(heavyAmmo == 0 && heavyAmmoReserve >= 10)
+        {
+            StartCoroutine(ReloadHeavy());           //Begins reloading
+            return;
+        }
+
+        if(rifleAmmo == 0 && rifleAmmoReserve >= 10)
+        {
+            StartCoroutine(ReloadRifle());           //Begins reloading
             return;
         }
 
@@ -80,11 +111,11 @@ public class GunBehavior : MonoBehaviour
         }
 
         //Manual reload
-        if (Input.GetKey("r") && currentAmmo < maxAmmo)
-        {
-            StartCoroutine(Reload());
-            return;
-        }
+        // if (Input.GetKey("r") && currentAmmo < maxAmmo)
+        // {
+        //     StartCoroutine(Reload());
+        //     return;
+        // }
     }
 
     IEnumerator OnScoped()
@@ -100,16 +131,15 @@ public class GunBehavior : MonoBehaviour
     {
         scopeOverlay.SetActive(false);
         weaponCamera.SetActive(true);
-
         mainCamera.fieldOfView = normalFOV;
     }
 
-    IEnumerator Reload()
+    IEnumerator ReloadSniper()
     {
         isReloading = true;
         Debug.Log("Reloading...");
 
-        if(currentAmmo == 0)
+        if(sniperAmmo == 0)
         {
             yield return new WaitForSeconds(.25f);              //Added lag before reload time
         }
@@ -129,7 +159,101 @@ public class GunBehavior : MonoBehaviour
             StartCoroutine(OnScoped());                     //Scope overlay applied if player was scoped in before reloading
         }
 
-        currentAmmo = maxAmmo;
+        sniperAmmo = maxAmmo;
+        sniperAmmoReserve -= maxAmmo;
+        isReloading = false;
+
+    }
+
+    IEnumerator ReloadPistol()
+    {
+        isReloading = true;
+        Debug.Log("Reloading...");
+
+        if(pistolAmmo == 0)
+        {
+            yield return new WaitForSeconds(.25f);              //Added lag before reload time
+        }
+        
+        scopeAnim.SetBool("Scoped", false);                 //Back out of scope
+        OnUnscoped();                                       //Back out of scope overlay
+        reloadAnim.SetBool("Reloading", true);              //Begin reloading
+
+        yield return new WaitForSeconds(reloadTime - .25f); //Reduced lag during reload time
+        
+        reloadAnim.SetBool("Reloading", false);             //Finish reloading
+        scopeAnim.SetBool("Scoped", isScoped);              //Scopes in if player was scoped in before reloading
+        yield return new WaitForSeconds(.25f);              //Added lag post reload time
+
+        if (isScoped)
+        {
+            StartCoroutine(OnScoped());                     //Scope overlay applied if player was scoped in before reloading
+        }
+
+        pistolAmmo = maxAmmo;
+        pistolAmmoReserve -= maxAmmo;
+        isReloading = false;
+
+    }
+
+    IEnumerator ReloadHeavy()
+    {
+        isReloading = true;
+        Debug.Log("Reloading...");
+
+        if(heavyAmmo == 0)
+        {
+            yield return new WaitForSeconds(.25f);              //Added lag before reload time
+        }
+        
+        scopeAnim.SetBool("Scoped", false);                 //Back out of scope
+        OnUnscoped();                                       //Back out of scope overlay
+        reloadAnim.SetBool("Reloading", true);              //Begin reloading
+
+        yield return new WaitForSeconds(reloadTime - .25f); //Reduced lag during reload time
+        
+        reloadAnim.SetBool("Reloading", false);             //Finish reloading
+        scopeAnim.SetBool("Scoped", isScoped);              //Scopes in if player was scoped in before reloading
+        yield return new WaitForSeconds(.25f);              //Added lag post reload time
+
+        if (isScoped)
+        {
+            StartCoroutine(OnScoped());                     //Scope overlay applied if player was scoped in before reloading
+        }
+
+        heavyAmmo = maxAmmo;
+        heavyAmmoReserve -= maxAmmo;
+        isReloading = false;
+
+    }
+
+    IEnumerator ReloadRifle()
+    {
+        isReloading = true;
+        Debug.Log("Reloading...");
+
+        if(rifleAmmo == 0)
+        {
+            yield return new WaitForSeconds(.25f);              //Added lag before reload time
+        }
+        
+        scopeAnim.SetBool("Scoped", false);                 //Back out of scope
+        OnUnscoped();                                       //Back out of scope overlay
+        reloadAnim.SetBool("Reloading", true);              //Begin reloading
+
+        yield return new WaitForSeconds(reloadTime - .25f); //Reduced lag during reload time
+        
+        reloadAnim.SetBool("Reloading", false);             //Finish reloading
+        scopeAnim.SetBool("Scoped", isScoped);              //Scopes in if player was scoped in before reloading
+        yield return new WaitForSeconds(.25f);              //Added lag post reload time
+
+        if (isScoped)
+        {
+            StartCoroutine(OnScoped());                     //Scope overlay applied if player was scoped in before reloading
+        }
+
+        rifleAmmo = maxAmmo;
+        rifleAmmoReserve -= maxAmmo;
         isReloading = false;
 
     }
@@ -141,7 +265,21 @@ public class GunBehavior : MonoBehaviour
         recoilAnim.SetTrigger("Fired");     //Reset recoil gun animation
         recoilScript.RecoilFire();          //Recoil mouse animation
         
-        currentAmmo--;
+        if(gameObject.tag == "Sniper") {
+            sniperAmmo--;
+        }
+
+        if(gameObject.tag == "Pistol") {
+            pistolAmmo--;
+        }
+
+        if(gameObject.tag == "Heavy") {
+            heavyAmmo--;
+        }
+
+        if(gameObject.tag == "Rifle") {
+            rifleAmmo--;
+        }
 
         RaycastHit hit;
         
@@ -165,5 +303,25 @@ public class GunBehavior : MonoBehaviour
             GameObject impactGO = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
             Destroy(impactGO, 2f);                                      //Destroy visual impact after 2 seconds
         }
+    }
+
+    void OnCollisionEnter(Collision other) {
+
+        if(other.gameObject.tag == "SniperAmmo") {
+            sniperAmmoReserve += 10;
+        }
+
+        if(other.gameObject.tag == "HeavyAmmo") {
+            heavyAmmoReserve += 10;
+        }
+
+        if(other.gameObject.tag == "PistolAmmo") {
+            pistolAmmoReserve += 10;
+        }
+
+        if(other.gameObject.tag == "RifleAmmo") {
+            rifleAmmoReserve += 10;
+        }
+
     }
 }
