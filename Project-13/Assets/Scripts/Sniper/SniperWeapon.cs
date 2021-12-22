@@ -1,19 +1,22 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class SniperWeapon : MonoBehaviour
 {
-    public float damage = 10f;
-    public float range = 100f;
-    public float impactForce = 30f;
-    public float fireRate = 15f;
+    private float damage = 60f;
+    private float range = 200f;
+    private float impactForce = 60f;
+    private float fireRate = 0.5f;
 
-    public int maxAmmo = 10;
-    public int sniperAmmo;
-    public int sniperAmmoReserve = 50;
+    private int maxAmmo = 6;
+    private int sniperAmmo;
+    private int sniperAmmoReserve = 12;
+    public Text ammoDisplay;
+    public Text totalAmmoDisplay;
 
     // private int currentAmmo;
-    public float reloadTime = 1f;
+    private float reloadTime = 4f;
     private bool isReloading = false;
     private bool isScoped = false;
 
@@ -31,7 +34,7 @@ public class SniperWeapon : MonoBehaviour
     public GameObject weaponCamera;
     public Camera mainCamera;
 
-    public float scopedFOV = 15f;           //Scoped/ADS field of view
+    private float scopedFOV = 5f;           //Scoped/ADS field of view
     private float normalFOV;                //Regular field of view
 
     public Recoil recoilScript;             //Recoil script
@@ -50,6 +53,9 @@ public class SniperWeapon : MonoBehaviour
 
     void Update()
     {
+        ammoDisplay.text = sniperAmmo.ToString();
+        totalAmmoDisplay.text = sniperAmmoReserve.ToString();
+
         if (Input.GetButtonDown("Fire2"))       //Aim down scope
         {
             isScoped = !isScoped;
@@ -128,10 +134,10 @@ public class SniperWeapon : MonoBehaviour
             StartCoroutine(OnScoped());                     //Scope overlay applied if player was scoped in before reloading
         }
 
-        if (sniperAmmoReserve > 10)
+        if (sniperAmmoReserve > maxAmmo)
         {
-            sniperAmmo = 10;
-            sniperAmmoReserve -= 10;
+            sniperAmmoReserve -= maxAmmo - sniperAmmo;
+            sniperAmmo = maxAmmo;
         }
         else
         {

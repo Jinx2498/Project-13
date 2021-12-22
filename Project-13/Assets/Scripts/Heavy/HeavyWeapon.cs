@@ -1,19 +1,22 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class HeavyWeapon : MonoBehaviour
 {
-    public float damage = 10f;
-    public float range = 100f;
-    public float impactForce = 30f;
-    public float fireRate = 15f;
+    private float damage = 15f;
+    private float range = 200f;
+    private float impactForce = 40f;
+    private float fireRate = 7f;
 
-    public int maxAmmo = 10;
-    public int heavyAmmo;
-    public int heavyAmmoReserve = 50;
+    private int maxAmmo = 30;
+    private int heavyAmmo;
+    private int heavyAmmoReserve = 120;
+    public Text ammoDisplay;
+    public Text totalAmmoDisplay;
 
     // private int currentAmmo;
-    public float reloadTime = 1f;
+    private float reloadTime = 3f;
     private bool isReloading = false;
     private bool isScoped = false;
 
@@ -31,7 +34,7 @@ public class HeavyWeapon : MonoBehaviour
     public GameObject weaponCamera;
     public Camera mainCamera;
 
-    public float scopedFOV = 15f;           //Scoped/ADS field of view
+    private float scopedFOV = 10f;           //Scoped/ADS field of view
     private float normalFOV;                //Regular field of view
 
     public Recoil recoilScript;             //Recoil script
@@ -50,6 +53,9 @@ public class HeavyWeapon : MonoBehaviour
 
     void Update()
     {
+        ammoDisplay.text = heavyAmmo.ToString();
+        totalAmmoDisplay.text = heavyAmmoReserve.ToString();
+
         if (Input.GetButtonDown("Fire2"))       //Aim down scope
         {
             isScoped = !isScoped;
@@ -126,10 +132,10 @@ public class HeavyWeapon : MonoBehaviour
             StartCoroutine(OnScoped());                     //Scope overlay applied if player was scoped in before reloading
         }
 
-        if(heavyAmmoReserve > 10)
+        if(heavyAmmoReserve > maxAmmo)
         {
-            heavyAmmo = 10;
-            heavyAmmoReserve -= 10;
+            heavyAmmoReserve -= maxAmmo - heavyAmmo;
+            heavyAmmo = maxAmmo;
         } else
         {
             heavyAmmo = heavyAmmoReserve;

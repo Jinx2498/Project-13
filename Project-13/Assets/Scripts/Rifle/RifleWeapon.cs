@@ -1,16 +1,19 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class RifleWeapon : MonoBehaviour
 {
-    public float damage = 10f;
-    public float range = 100f;
-    public float impactForce = 30f;
-    public float fireRate = 15f;
+    private float damage = 10f;
+    private float range = 200f;
+    private float impactForce = 20f;
+    private float fireRate = 15f;
 
-    public int maxAmmo = 10;
-    public int rifleAmmo;
-    public int rifleAmmoReserve = 50;
+    private int maxAmmo = 20;
+    private int rifleAmmo;
+    private int rifleAmmoReserve = 100;
+    public Text ammoDisplay;
+    public Text totalAmmoDisplay;
 
     // private int currentAmmo;
     public float reloadTime = 1f;
@@ -31,7 +34,7 @@ public class RifleWeapon : MonoBehaviour
     public GameObject weaponCamera;
     public Camera mainCamera;
 
-    public float scopedFOV = 15f;           //Scoped/ADS field of view
+    private float scopedFOV = 10f;           //Scoped/ADS field of view
     private float normalFOV;                //Regular field of view
 
     public Recoil recoilScript;             //Recoil script
@@ -50,6 +53,9 @@ public class RifleWeapon : MonoBehaviour
 
     void Update()
     {
+        ammoDisplay.text = rifleAmmo.ToString();
+        totalAmmoDisplay.text = rifleAmmoReserve.ToString();
+
         if (Input.GetButtonDown("Fire2"))       //Aim down scope
         {
             isScoped = !isScoped;
@@ -128,10 +134,10 @@ public class RifleWeapon : MonoBehaviour
             StartCoroutine(OnScoped());                     //Scope overlay applied if player was scoped in before reloading
         }
 
-        if (rifleAmmoReserve > 10)
+        if (rifleAmmoReserve > maxAmmo)
         {
-            rifleAmmo = 10;
-            rifleAmmoReserve -= 10;
+            rifleAmmoReserve -= maxAmmo - rifleAmmo;
+            rifleAmmo = maxAmmo;
         }
         else
         {
