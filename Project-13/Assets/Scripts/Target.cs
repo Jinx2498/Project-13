@@ -1,9 +1,16 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Target : MonoBehaviour
 {
 
     public float health = 50f;
+    public Text healthDispley;
+
+    public void Update()
+    {
+        healthDispley.text = health.ToString();
+    }
 
     public void TakeDamage(float amount)
     {
