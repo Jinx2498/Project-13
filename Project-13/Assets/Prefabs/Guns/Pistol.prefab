@@ -90,7 +90,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3089628193812881544}
-  - component: {fileID: 3089628193812881551}
+  - component: {fileID: 2833050691616168452}
   m_Layer: 3
   m_Name: Pistol
   m_TagString: Untagged
@@ -120,7 +120,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -2, z: 0}
---- !u!114 &3089628193812881551
+--- !u!114 &2833050691616168452
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,21 +129,28 @@ MonoBehaviour:
   m_GameObject: {fileID: 3089628193812881545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a1f65cde786af418ffb6d337fd6a17, type: 3}
+  m_Script: {fileID: 11500000, guid: ec7b6a8e23e3e6a41b5df9bee9737a18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 10
   range: 100
   impactForce: 30
-  fireRate: 4
+  fireRate: 15
   maxAmmo: 10
+  pistolAmmo: 0
+  pistolAmmoReserve: 50
   reloadTime: 1
   fpsCam: {fileID: 0}
-  muzzleFlash: {fileID: 4744866912887791195, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
-  impactEffect: {fileID: 1629689943533415070, guid: 4f75f1ab2b9f15745876fa84a254f638, type: 3}
+  muzzleFlash: {fileID: 0}
+  impactEffect: {fileID: 0}
+  recoilAnim: {fileID: 0}
   reloadAnim: {fileID: 0}
   scopeAnim: {fileID: 0}
   scopeOverlay: {fileID: 0}
+  weaponCamera: {fileID: 0}
+  mainCamera: {fileID: 0}
+  scopedFOV: 15
+  recoilScript: {fileID: 0}
 --- !u!1 &3089628194029412329
 GameObject:
   m_ObjectHideFlags: 0

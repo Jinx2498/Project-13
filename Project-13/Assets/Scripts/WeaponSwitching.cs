@@ -3,6 +3,8 @@ using UnityEngine;
 public class WeaponSwitching : MonoBehaviour
 {
     public int selectedWeapon = 0;      //Weapon list
+    public GrenadeThrower grenadeScript;
+    public int numGrenades = 2;
 
     void Start()
     {
@@ -14,7 +16,7 @@ public class WeaponSwitching : MonoBehaviour
         int previousSelectedWeapon = selectedWeapon;
 
         //Mouse scroll up for weapon change
-        if((Input.GetAxis("Mouse ScrollWheel") > 0f) && selectedWeapon < transform.childCount - 1)
+        if ((Input.GetAxis("Mouse ScrollWheel") > 0f) && selectedWeapon < transform.childCount - 2)      //Minus 2 to allow for the grenade slot to remain untouched
         {
             selectedWeapon++;
         }
@@ -42,7 +44,15 @@ public class WeaponSwitching : MonoBehaviour
         {
             selectedWeapon = 3;
         }
+        if (Input.GetKey("q") && transform.childCount >= 5 && numGrenades > 0)
+        {
+            selectedWeapon = 4;
+        }
 
+        if (selectedWeapon == 4 && numGrenades == 0)
+        {
+            selectedWeapon = 0;
+        }
 
         //change weapon
         if (previousSelectedWeapon != selectedWeapon)
@@ -54,14 +64,15 @@ public class WeaponSwitching : MonoBehaviour
     void SelectWeapon()
     {
         int i = 0;
-        
+
         //Visual weapon change
-        foreach(Transform weapon in transform)
+        foreach (Transform weapon in transform)
         {
-            if(i == selectedWeapon)
+            if (i == selectedWeapon)
             {
                 weapon.gameObject.SetActive(true);
-            } else
+            }
+            else
             {
                 weapon.gameObject.SetActive(false);
             }
