@@ -53,21 +53,24 @@
     <UnityVersion>2020.3.24f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\GrenadeThrower.cs" />
+    <Compile Include="Assets\Scripts\Grenades\GrenadeThrower.cs" />
     <Compile Include="Assets\Scripts\MouseLook.cs" />
     <Compile Include="Assets\Scripts\Recoil.cs" />
-    <Compile Include="Assets\Scripts\SniperAmmo.cs" />
+    <Compile Include="Assets\Scripts\Pick Ups\SniperAmmo.cs" />
     <Compile Include="Assets\Scripts\WeaponSwitching.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\HeavyAmmo.cs" />
-    <Compile Include="Assets\Scripts\Grenade.cs" />
-    <Compile Include="Assets\Scripts\GunBehavior.cs" />
-    <Compile Include="Assets\Scripts\RifleAmmo.cs" />
+    <Compile Include="Assets\Scripts\Pick Ups\HeavyAmmo.cs" />
+    <Compile Include="Assets\Scripts\Grenades\Grenade.cs" />
+    <Compile Include="Assets\Scripts\Heavy\HeavyWeapon.cs" />
+    <Compile Include="Assets\Scripts\Pick Ups\RifleAmmo.cs" />
     <Compile Include="Assets\Teleportation Pad\CustomTeleporter.cs" />
-    <Compile Include="Assets\Scripts\Destructible.cs" />
-    <Compile Include="Assets\Scripts\PistolAmmo.cs" />
+    <Compile Include="Assets\Scripts\Grenades\Destructible.cs" />
+    <Compile Include="Assets\Scripts\Pick Ups\PistolAmmo.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
-    <Compile Include="Assets\Scripts\HealthPickup.cs" />
+    <Compile Include="Assets\Scripts\Pick Ups\HealthPickup.cs" />
+    <Compile Include="Assets\Scripts\Pistol\PistolWeapon.cs" />
+    <Compile Include="Assets\Scripts\Sniper\SniperWeapon.cs" />
+    <Compile Include="Assets\Scripts\Rifle\RifleWeapon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
