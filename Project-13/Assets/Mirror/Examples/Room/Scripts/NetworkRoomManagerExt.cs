@@ -71,7 +71,7 @@ namespace Mirror.Examples.NetworkRoom
             base.OnGUI();
 
             if (!showStartButton || !allPlayersReady) return;
-            if (GUI.Button(new Rect(150, 300, 120, 20), "START GAME"))
+            if (GUI.Button(new Rect(610, 10, 120, 20), "START GAME"))
             {
                 // set to false to hide it in the game scene
                 showStartButton = false;

@@ -143,38 +143,31 @@ namespace Mirror
                     return;
 
                 DrawPlayerReadyState();
-                DrawPlayerReadyButton();
             }
         }
 
         void DrawPlayerReadyState()
         {
-            GUILayout.BeginArea(new Rect(20f + (index * 100), 200f, 90f, 130f));
+            GUILayout.BeginArea(new Rect(
+                (index + 1) * Screen.width / 6,
+                Screen.height - 150,
+                100, 130
+            ));
 
-            GUILayout.Label($"Player [{index + 1}]");
+            GUILayout.BeginHorizontal();
+            GUILayout.FlexibleSpace();
+            GUILayout.Label($"Player {index + 1}");
+            GUILayout.FlexibleSpace();
+            GUILayout.EndHorizontal();
 
-            if (readyToBegin)
-                GUILayout.Label("Ready");
-            else
-                GUILayout.Label("Not Ready");
+            GUILayout.BeginHorizontal();
+            GUILayout.FlexibleSpace();
+            GUILayout.Label(readyToBegin ? "Ready!" : "Waiting...");
+            GUILayout.FlexibleSpace();
+            GUILayout.EndHorizontal();
 
-            if (((isServer && index > 0) || isServerOnly) && GUILayout.Button("REMOVE"))
-            {
-                // This button only shows on the Host for all players other than the Host
-                // Host and Players can't remove themselves (stop the client instead)
-                // Host can kick a Player this way.
-                GetComponent<NetworkIdentity>().connectionToClient.Disconnect();
-            }
-
-            GUILayout.EndArea();
-        }
-
-        void DrawPlayerReadyButton()
-        {
             if (NetworkClient.active && isLocalPlayer)
             {
-                GUILayout.BeginArea(new Rect(20f, 300f, 120f, 20f));
-
                 if (readyToBegin)
                 {
                     if (GUILayout.Button("Cancel"))
@@ -185,9 +178,17 @@ namespace Mirror
                     if (GUILayout.Button("Ready"))
                         CmdChangeReadyState(true);
                 }
-
-                GUILayout.EndArea();
             }
+
+            if (((isServer && index > 0) || isServerOnly) && GUILayout.Button("Kick"))
+            {
+                // This button only shows on the Host for all players other than the Host
+                // Host and Players can't remove themselves (stop the client instead)
+                // Host can kick a Player this way.
+                GetComponent<NetworkIdentity>().connectionToClient.Disconnect();
+            }
+
+            GUILayout.EndArea();
         }
 
         #endregion

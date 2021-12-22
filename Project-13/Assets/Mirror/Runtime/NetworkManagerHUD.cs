@@ -1,5 +1,7 @@
 // vis2k: GUILayout instead of spacey += ...; removed Update hotkeys to avoid
 // confusion if someone accidentally presses one.
+using System.Net;
+using System.Net.Sockets;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,13 +19,27 @@ namespace Mirror
         public int offsetX;
         public int offsetY;
         public string joinAddr = "";
-        public string hostAddrPort = "...";
+        public string hostAddr = "127.0.0.1";
         public int selectedMap = 0;
-        private string[] mapNames = { " Arena #1 - 'Plains'", " Arena #2 - 'Fountain'", " Arena #3 - 'Complex'" };
+        private string[] mapNames = { " Arena #1", " Arena #2", " Arena #3" };
 
         void Awake()
         {
             manager = GetComponent<NetworkManager>();
+
+            // get local ip
+            IPHostEntry host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach(IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork)
+                {
+                    hostAddr = ip.ToString();
+                    break;
+                }
+            }
+            // hostAddr = new WebClient().DownloadString("https://icanhazip.com").Trim();
+
+            manager.networkAddress = hostAddr;
             manager.StartHost();
         }
 
@@ -36,8 +52,7 @@ namespace Mirror
                 // hosting
                 GUILayout.BeginHorizontal();
                 GUILayout.Label("You are hosting a lobby on:");
-                hostAddrPort = manager.networkAddress;
-                GUILayout.Label(hostAddrPort);
+                GUILayout.Label(hostAddr);
                 GUILayout.FlexibleSpace();
                 GUILayout.EndHorizontal();
                 GUILayout.BeginHorizontal();
@@ -49,7 +64,7 @@ namespace Mirror
                 {
                     // copy address + port to clipboard
                     TextEditor te = new TextEditor();
-                    te.text = hostAddrPort;
+                    te.text = hostAddr;
                     te.SelectAll();
                     te.Copy();
                 }
@@ -62,6 +77,7 @@ namespace Mirror
                 joinAddr = GUILayout.TextField(joinAddr, 21, GUILayout.MinWidth(180));
                 if (GUILayout.Button("Join"))
                 {
+                    // temporarily disable offline scene to allow switching from host to client
                     manager.networkAddress = joinAddr;
                     string offlineTemp = manager.offlineScene;
                     manager.offlineScene = null;
@@ -76,7 +92,7 @@ namespace Mirror
             // client only
             else if (NetworkClient.isConnected)
             {
-                GUILayout.Label($"<b>Client</b>: connected to {manager.networkAddress} via {Transport.activeTransport}");
+                GUILayout.Label($"Connected to {manager.networkAddress}");
                 if (GUILayout.Button("Leave lobby"))
                 {
                     manager.StopClient();
@@ -100,7 +116,7 @@ namespace Mirror
 
             if (NetworkServer.active && NetworkClient.active)
             {
-                GUILayout.BeginArea(new Rect(410, 10, 300, 9999));
+                GUILayout.BeginArea(new Rect(410, 10, 200, 9999));
 
                 GUILayout.Label("-- MATCH SETTINGS --");
                 selectedMap = GUILayout.SelectionGrid(selectedMap, mapNames, 1, "toggle");
