@@ -13,7 +13,14 @@ TagManager:
   - Health Pickup
   - Red Teleport 1
   - Red Teleport 2
-  - MainMenuMusic
+  - Sniper
+  - Rifle
+  - Pistol
+  - Heavy
+  - SniperAmmo
+  - HeavyAmmo
+  - RifleAmmo
+  - PistolAmmo
   layers:
   - Default
   - TransparentFX
