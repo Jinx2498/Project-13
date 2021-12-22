@@ -689,9 +689,6 @@ namespace Mirror
                     ServerChangeScene(RoomScene);
                 GUILayout.EndArea();
             }
-
-            if (IsSceneActive(RoomScene))
-                GUI.Box(new Rect(10f, 180f, 520f, 150f), "PLAYERS");
         }
 
 #endregion

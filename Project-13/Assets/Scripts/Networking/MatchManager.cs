@@ -33,6 +33,9 @@ public class MatchManager : NetworkManager
     public override void Start()
     {
         base.Start();
+
+        // automatically host a lobby when the scene is loaded.
+        StartHost();
     }
 
     /// <summary>
