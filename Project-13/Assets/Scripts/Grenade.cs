@@ -7,6 +7,7 @@ public class Grenade : MonoBehaviour
     public float delay = 3f;
     public float radius = 5f;
     public float force = 800f;
+    public float damage = 80f;
 
     public GameObject expAnim;          //Explosion animation
 
@@ -21,7 +22,7 @@ public class Grenade : MonoBehaviour
     {
         countdown -= Time.deltaTime;    //Counts down each frame
 
-        if(countdown <= 0f && !hasExploded)
+        if (countdown <= 0f && !hasExploded)
         {
             Explode();
             hasExploded = true;
@@ -38,9 +39,16 @@ public class Grenade : MonoBehaviour
         {
             Destructible dest = nearbyObject.GetComponent<Destructible>();
 
-            if(dest != null)
+            if (dest != null)
             {
                 dest.Destroy();
+            }
+
+            Target target = nearbyObject.GetComponent<Target>();
+
+            if (target != null)
+            {
+                target.TakeDamage(damage);
             }
         }
 

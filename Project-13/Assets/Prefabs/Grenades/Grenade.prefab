@@ -324,4 +324,7 @@ MonoBehaviour:
   delay: 3
   radius: 5
   force: 800
+  damage: 80
   expAnim: {fileID: 4744866912887791198, guid: 614e7e20e3e827c44be87aaee0fd56eb, type: 3}
+  grenadePref: {fileID: 3685547929531677890}
+  throwForce: 40

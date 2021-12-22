@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class GrenadeThrower : MonoBehaviour
 {
-    public float throwForce = 40f;
+    public WeaponSwitching weaponSwitchScript;
     public GameObject grenadePref;      //Grenade Prefab
+    public float throwForce = 40f;
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))        //0 is the left mouse click
+        if (Input.GetMouseButtonDown(0) && weaponSwitchScript.numGrenades > 0 && weaponSwitchScript.selectedWeapon == 4)        //0 is the left mouse click
         {
+            weaponSwitchScript.numGrenades--;
             ThrowGrenade();
         }
     }
 
-    void ThrowGrenade()
+    public void ThrowGrenade()
     {
         GameObject grenade = Instantiate(grenadePref, transform.position, transform.rotation);
         Rigidbody rb = grenade.GetComponent<Rigidbody>();
