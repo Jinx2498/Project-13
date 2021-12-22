@@ -18,6 +18,19 @@ public class PlayerMovement : MonoBehaviour
     Vector3 velocity;
     bool isGrounded;
 
+    private bool isCrouching;
+    private Vector3 originalCenter;
+    private float originalHeight;
+    private float originalMoveSpeed;
+
+    void Start () {
+        transform.tag = "Player";
+        controller = GetComponent<CharacterController>();   
+        originalCenter = controller.center;
+        originalHeight = controller.height;
+        originalMoveSpeed = speed;  
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -42,5 +55,31 @@ public class PlayerMovement : MonoBehaviour
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+        if(Input.GetButtonDown("Crouch")) {
+            controller.height = 1f;
+            controller.center = new Vector3(0f, -0.5f, 0f);
+            speed = 3f;
+            isCrouching = true;
+        }
+
+        if(!Input.GetButton("Crouch") && isCrouching) {
+            controller.height = originalHeight;
+            controller.center = originalCenter;
+            speed = originalMoveSpeed;
+            isCrouching = false;
+        }
+
+        if(!Input.GetButton("Crouch") && isCrouching) {
+            Vector3 point0 = transform.position + originalCenter - new Vector3(0.0f, originalHeight, 0.0f);           
+            Vector3 point1 = transform.position + originalCenter + new Vector3(0.0f, originalHeight, 0.0f);
+            if (Physics.OverlapCapsule(point0, point1, controller.radius).Length == 0) {
+                controller.height = originalHeight;
+                controller.center = originalCenter;
+                speed = originalMoveSpeed;
+                isCrouching = false;
+            }
+        }   
+        
     }
 }
