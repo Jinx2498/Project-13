@@ -3,14 +3,14 @@ using System.Collections;
 
 public class PistolWeapon : MonoBehaviour
 {
-    public float damage = 10f;
-    public float range = 100f;
-    public float impactForce = 30f;
-    public float fireRate = 15f;
+    private float damage = 20f;
+    private float range = 100f;
+    private float impactForce = 30f;
+    private float fireRate = 4f;
 
-    public int maxAmmo = 10;
+    private int maxAmmo = 12;
     public int pistolAmmo;
-    public int pistolAmmoReserve = 50;
+    public int pistolAmmoReserve = 24;
 
     // private int currentAmmo;
     public float reloadTime = 1f;

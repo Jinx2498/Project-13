@@ -3,17 +3,17 @@ using System.Collections;
 
 public class HeavyWeapon : MonoBehaviour
 {
-    public float damage = 10f;
-    public float range = 100f;
-    public float impactForce = 30f;
-    public float fireRate = 15f;
+    private float damage = 15f;
+    private float range = 100f;
+    private float impactForce = 40f;
+    private float fireRate = 7f;
 
-    public int maxAmmo = 10;
+    private int maxAmmo = 30;
     public int heavyAmmo;
-    public int heavyAmmoReserve = 50;
+    public int heavyAmmoReserve = 120;
 
     // private int currentAmmo;
-    public float reloadTime = 1f;
+    private float reloadTime = 3f;
     private bool isReloading = false;
     private bool isScoped = false;
 

@@ -3,17 +3,17 @@ using System.Collections;
 
 public class SniperWeapon : MonoBehaviour
 {
-    public float damage = 10f;
-    public float range = 100f;
-    public float impactForce = 30f;
-    public float fireRate = 15f;
+    private float damage = 60f;
+    private float range = 100f;
+    private float impactForce = 60f;
+    private float fireRate = 0.5f;
 
-    public int maxAmmo = 10;
+    private int maxAmmo = 6;
     public int sniperAmmo;
-    public int sniperAmmoReserve = 50;
+    public int sniperAmmoReserve = 12;
 
     // private int currentAmmo;
-    public float reloadTime = 1f;
+    private float reloadTime = 4f;
     private bool isReloading = false;
     private bool isScoped = false;
 
@@ -31,7 +31,7 @@ public class SniperWeapon : MonoBehaviour
     public GameObject weaponCamera;
     public Camera mainCamera;
 
-    public float scopedFOV = 15f;           //Scoped/ADS field of view
+    public float scopedFOV = 20f;           //Scoped/ADS field of view
     private float normalFOV;                //Regular field of view
 
     public Recoil recoilScript;             //Recoil script
