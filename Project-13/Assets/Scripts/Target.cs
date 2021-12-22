@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class Target : MonoBehaviour
 {
 
-    public float health = 50f;
+    public float health = 100f;
     public Text healthDispley;
 
     public void Update()

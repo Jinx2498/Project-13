@@ -5,13 +5,13 @@ using UnityEngine.UI;
 public class SniperWeapon : MonoBehaviour
 {
     private float damage = 60f;
-    private float range = 100f;
+    private float range = 200f;
     private float impactForce = 60f;
     private float fireRate = 0.5f;
 
     private int maxAmmo = 6;
-    public int sniperAmmo;
-    public int sniperAmmoReserve = 12;
+    private int sniperAmmo;
+    private int sniperAmmoReserve = 12;
     public Text ammoDisplay;
     public Text totalAmmoDisplay;
 
@@ -34,7 +34,7 @@ public class SniperWeapon : MonoBehaviour
     public GameObject weaponCamera;
     public Camera mainCamera;
 
-    public float scopedFOV = 20f;           //Scoped/ADS field of view
+    private float scopedFOV = 5f;           //Scoped/ADS field of view
     private float normalFOV;                //Regular field of view
 
     public Recoil recoilScript;             //Recoil script
