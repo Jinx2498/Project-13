@@ -32,6 +32,7 @@ public class HeavyAmmo : MonoBehaviour
 
     void OnTriggerEnter()
     {
+        //PistolWeapon pistol = transform.GetComponent<PistolWeapon>();
         heavyScript.AddHeavyAmmo();
         Destroy(gameObject);
     }
