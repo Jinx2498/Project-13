@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1111,6 +1111,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 2419027441
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1852,6 +1856,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 3068981766
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2103,6 +2111,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 1399037064
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2679,6 +2691,23 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8121686736740376697, guid: 6dc4cf4496348884d8ee27743ae38562, type: 3}
   m_PrefabInstance: {fileID: 291933789}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &279120701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 279120700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 3854443741
+  serverOnly: 0
+  visible: 0
+  m_AssetId: 6dc4cf4496348884d8ee27743ae38562
+  hasSpawned: 0
 --- !u!114 &279120703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8340,6 +8369,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 3781584190
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -8496,6 +8529,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 3620399956
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -11005,6 +11042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4afdac86ed46342c392402b7a25bc28d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pistolScript: {fileID: 0}
 --- !u!65 &713597605
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11242,6 +11280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 545523e81c2c24f63ab765da178c3051, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rifleScript: {fileID: 0}
 --- !u!65 &740292064
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11541,6 +11580,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 18969771
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -11912,6 +11955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93a0016b8421409480df7e1aabb616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heavyScript: {fileID: 0}
 --- !u!65 &819175548
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13528,6 +13572,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 990463781
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -14586,6 +14634,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 1763841653
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -15529,6 +15581,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 26146719
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: groundCheck
       value: 
@@ -15697,6 +15753,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 2459771396
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -18673,6 +18733,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 385607682
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -18734,6 +18798,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 233772857
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -19810,6 +19878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa5374ff1f1a452d80f3b3c624074fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sniperScript: {fileID: 0}
 --- !u!65 &1918734047
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25781,6 +25850,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 258111674}
     m_Modifications:
+    - target: {fileID: -2536289221497448999, guid: 5d4cb52c50d24e841885970511963155, type: 3}
+      propertyPath: sceneId
+      value: 1991517579
+      objectReference: {fileID: 0}
     - target: {fileID: 740096766473191088, guid: 5d4cb52c50d24e841885970511963155, type: 3}
       propertyPath: m_Enabled
       value: 0
