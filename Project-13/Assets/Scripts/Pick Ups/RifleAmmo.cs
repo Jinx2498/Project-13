@@ -4,21 +4,12 @@ using UnityEngine;
 
 public class RifleAmmo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public RifleWeapon rifleScript;
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter()
     {
-        
-    }
-
-    void OnTriggerEnter(Collider col) {
-        if(col.gameObject.tag == "Player") {
-            Destroy(gameObject);
-        }
+        //PistolWeapon pistol = transform.GetComponent<PistolWeapon>();
+        rifleScript.AddRifleAmmo();
+        Destroy(gameObject);
     }
 }
