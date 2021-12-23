@@ -47,54 +47,54 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.11</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.18f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Mirror\Examples\MultipleMatches\Scripts\MatchGUI.cs" />
+    <Compile Include="Assets\Mirror\Examples\Room\Scripts\RandomColor.cs" />
+    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\MultiSceneNetManager.cs" />
+    <Compile Include="Assets\Mirror\Examples\Benchmark\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\AdditiveNetworkManager.cs" />
+    <Compile Include="Assets\Mirror\Examples\Tanks\Scripts\FaceCamera.cs" />
+    <Compile Include="Assets\Mirror\Examples\MultipleMatches\Scripts\PlayerGUI.cs" />
+    <Compile Include="Assets\Mirror\Examples\Room\Scripts\Spawner.cs" />
+    <Compile Include="Assets\Mirror\Examples\Pong\Scripts\Player.cs" />
+    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\RandomColor.cs" />
+    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Mirror\Examples\Benchmark\Scripts\MonsterMovement.cs" />
+    <Compile Include="Assets\Mirror\Examples\MultipleMatches\Scripts\MatchController.cs" />
+    <Compile Include="Assets\Mirror\Examples\Chat\Scripts\ChatWindow.cs" />
+    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\RandomColor.cs" />
     <Compile Include="Assets\Mirror\Examples\Pong\Scripts\Ball.cs" />
     <Compile Include="Assets\Mirror\Examples\Basic\Scripts\PlayerUI.cs" />
     <Compile Include="Assets\Mirror\Examples\Tanks\Scripts\Projectile.cs" />
     <Compile Include="Assets\Mirror\Examples\Room\Scripts\PlayerScore.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Mirror\Examples\Room\Scripts\RandomColor.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleMatches\Scripts\MatchMessages.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\MultiSceneNetManager.cs" />
     <Compile Include="Assets\Mirror\Examples\Chat\Scripts\Player.cs" />
     <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\ShootingTankBehaviour.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleMatches\Scripts\RoomGUI.cs" />
-    <Compile Include="Assets\Mirror\Examples\Benchmark\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Mirror\Examples\Benchmark\Scripts\BenchmarkNetworkManager.cs" />
     <Compile Include="Assets\Mirror\Examples\Room\Scripts\NetworkRoomManagerExt.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleMatches\Scripts\MatchNetworkManager.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleMatches\Scripts\CanvasController.cs" />
-    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\AdditiveNetworkManager.cs" />
     <Compile Include="Assets\Mirror\Examples\Pong\Scripts\NetworkManagerPong.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleMatches\Scripts\CellGUI.cs" />
-    <Compile Include="Assets\Mirror\Examples\Tanks\Scripts\FaceCamera.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleMatches\Scripts\PlayerGUI.cs" />
-    <Compile Include="Assets\Mirror\Examples\Room\Scripts\Spawner.cs" />
     <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\ZoneHandler.cs" />
-    <Compile Include="Assets\Mirror\Examples\Pong\Scripts\Player.cs" />
     <Compile Include="Assets\Mirror\Examples\Room\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Mirror\Examples\RigidbodyPhysics\Scripts\AddForce.cs" />
     <Compile Include="Assets\Mirror\Examples\Tanks\Scripts\Tank.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\PlayerScore.cs" />
-    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\RandomColor.cs" />
-    <Compile Include="Assets\Mirror\Examples\AdditiveScenes\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Mirror\Examples\Benchmark\Scripts\MonsterMovement.cs" />
     <Compile Include="Assets\Mirror\Examples\Room\Scripts\Reward.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleMatches\Scripts\MatchController.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\PhysicsCollision.cs" />
     <Compile Include="Assets\Mirror\Examples\Chat\Scripts\ChatNetworkManager.cs" />
     <Compile Include="Assets\Mirror\Examples\Basic\Scripts\Player.cs" />
     <Compile Include="Assets\Mirror\Examples\Basic\Scripts\BasicNetManager.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\Reward.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\PhysicsSimulator.cs" />
-    <Compile Include="Assets\Mirror\Examples\Chat\Scripts\ChatWindow.cs" />
-    <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\RandomColor.cs" />
     <Compile Include="Assets\Mirror\Examples\Room\Scripts\NetworkRoomPlayerExt.cs" />
     <Compile Include="Assets\Mirror\Examples\MultipleAdditiveScenes\Scripts\Spawner.cs" />
   </ItemGroup>
@@ -339,25 +339,43 @@
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Pdb">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.5\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.4\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.visualscripting@1.7.5\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+      <HintPath>Library\PackageCache\com.unity.cinemachine@2.8.2\Runtime\ThirdParty\clipper_library.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.NRefactory">
+      <HintPath>Library\PackageCache\com.unity.render-pipelines.core@10.7.0\Editor\ShaderGenerator\ICSharpCode.NRefactory.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.18f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
