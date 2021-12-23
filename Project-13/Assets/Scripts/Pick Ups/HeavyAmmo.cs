@@ -7,6 +7,7 @@ public class HeavyAmmo : MonoBehaviour
     private Transform ammoPos;
     private Transform spawnPoint;
     private bool destroyed = false;
+    public HeavyWeapon heavyScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,10 +30,9 @@ public class HeavyAmmo : MonoBehaviour
         
     }
 
-    void OnTriggerEnter(Collider col) {
-    
+    void OnTriggerEnter()
+    {
+        heavyScript.AddHeavyAmmo();
         Destroy(gameObject);
-        destroyed = true;
-        
     }
 }
