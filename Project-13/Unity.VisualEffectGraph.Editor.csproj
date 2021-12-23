@@ -98,10 +98,10 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Slots/Implementations/VFXSlotFloat4.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Attribute/AttributeFromMap.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Minimum.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/VFXBlockUI.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Core/VFXConverter.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Blackboard/VFXBlackboardPropertyView.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/VFXSubgraphOperator.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/VFXBlockUI.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionStrips.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Types/VFXTypes.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionBakeGradient.cs" />
@@ -135,8 +135,8 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Data/VFXDataParticle.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Types/VFXTypeUtility.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/CrossProductDeprecated.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Data/VFXDataMesh.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Inspector/GizmoController.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Data/VFXDataMesh.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Output/SubpixelAA.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/VFXDataEdge.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Controls/VFXEnumField.cs" />
@@ -173,9 +173,9 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/RectangularToPolar.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/ShaderGraph/VFXShaderGraphParticleOutput.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/SquaredDistance.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Update/BackupOldPosition.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/Controllers/VFXParameterNodeController.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/TransformMatrix.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/Controllers/VFXParameterNodeController.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Update/BackupOldPosition.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Log.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/ShaderGraph/VFXShaderGraphPostProcessor.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Utilities/pCache/BakeTool/PointCacheBakeTool.cs" />
@@ -242,8 +242,8 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Blackboard/VFXBlackboard.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/InverseTRSMatrix.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Saturate.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/OrientedBoxVolume.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Views/VFXConvertSubgraph.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/OrientedBoxVolume.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Slots/Implementations/VFXSlotTexture3D.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Sign.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Length.cs" />
@@ -263,8 +263,8 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/OneMinus.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/PeriodicTotalTime.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Position/PositionSDF.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Slots/Implementations/VFXSlotBool.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Forces/Drag.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Slots/Implementations/VFXSlotBool.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Update/EulerIntegration.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/VFXUI.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Types/VFXCircleGizmos.cs" />
@@ -322,8 +322,8 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/Controllers/VFXDataAnchorController.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Update/AngularEulerIntegration.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Controls/Element3D.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Branch.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/VFXNodeUI.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Branch.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Forces/VectorFieldForce.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/RGBtoHSV.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Controls/VFXFlipBookField.cs" />
@@ -346,8 +346,8 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Contexts/Implementations/VFXPlanarPrimitiveHelper.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionSampleTexture2D.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Views/Properties/ColorPropertyRM.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/VisualElementExtensions.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Collision/CollisionAABox.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/VisualElementExtensions.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Position/PositionTorus.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Controllers/Controller.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Types/VFXTorusGizmos.cs" />
@@ -403,9 +403,9 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Slots/Implementations/VFXSlotTextureCubeArray.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Utilities/DotGraph/DotGraph.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionSampleTextureCube.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Forces/ForceHelper.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Controls/VFXEnumValuePopup.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Inspector/VFXContextEditor.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Forces/ForceHelper.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/MeshVertexCount.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Step.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Compiler/VFXCodeGenerator.cs" />
@@ -431,8 +431,8 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/SampleTextureCube.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/SampleTexture3D.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/CameraHelper.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Add.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionSampleTexture3D.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Add.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/Controllers/VFXContextDataAnchorController.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Contexts/VFXSubgraphContext.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionCast.cs" />
@@ -440,8 +440,8 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Types/VFXBoxGizmos.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Views/VFXPaste.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionAbstract.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/Controllers/VFXNodeController.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/TransformVector.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/Controllers/VFXNodeController.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Forces/Gravity.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionNoise.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Attribute/AttributeFromCurve.cs" />
@@ -463,8 +463,8 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionLoadTexture.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/BitwiseAnd.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionSampleAttributeMap.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/CurlNoise.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Compiler/VFXExpressionMapper.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/CurlNoise.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Controls/VFXReorderableList.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/PositionDepth.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Utilities/pCache/PointCacheAsset.cs" />
@@ -474,8 +474,8 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Elements/Controllers/VFXDataEdgeController.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/ConeVolume.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Types/VFXTypeExtension.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Contexts/Implementations/VFXBasicUpdate.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Utils/VFXContextBorder.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Contexts/Implementations/VFXBasicUpdate.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Slots/Implementations/VFXSlotTexture2DArray.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/RemapToNegOnePosOne.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Acos.cs" />
@@ -492,9 +492,9 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Contexts/Implementations/VFXDecalOutput.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionMath.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/FilterPopup/VFXBlockProvider.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/VFXOperatorUtility.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/SampleGradient.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/Swizzle.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/VFXOperatorUtility.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Types/VFXPropertyAttribute.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Utilities/pCache/PCache.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Orientation/ConnectTarget.cs" />
@@ -509,8 +509,8 @@
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Slots/Implementations/VFXSlotOrientedBox.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Operators/Implementations/SampleMesh.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Expressions/VFXExpressionCamera.cs" />
-     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Blackboard/VFXBlackboardCategory.cs" />
      <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Models/Blocks/Implementations/Position/PositionSequential.cs" />
+     <Compile Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/GraphView/Blackboard/VFXBlackboardCategory.cs" />
      <None Include="Library/PackageCache/com.unity.visualeffectgraph@10.7.0/Editor/Unity.VisualEffectGraph.Editor.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.24f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -746,29 +746,29 @@
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
     <Reference Include="unityplastic">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.cinemachine@2.8.2/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.render-pipelines.core@10.7.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
-    </Reference>
-    <Reference Include="clipper_library">
-        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.cinemachine@2.8.2/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

@@ -114,8 +114,8 @@
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Views/Adapters/ListAdapters/ToggleableChangeListAdapter.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Common/StringArrayContainer.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/UserInterface/CollaborateWindow.cs" />
-     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Presenters/HistoryPresenter.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/EditorGameService/CloudCollabServiceIdentifier.cs" />
+     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Presenters/HistoryPresenter.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Models/Providers/Collab.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Components/TabPageComponent.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/EditorGameService/CloudCollabTopMenu.cs" />
@@ -127,8 +127,8 @@
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/EditorGameService/SettingsProviderVisuals/DisabledVisuals.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Presenters/IStartPresenter.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Views/Adapters/IAdapterObserver.cs" />
-     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Settings/CollabSettings.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/EditorGameService/Analytics/EditorGameServiceAnalyticsSender.cs" />
+     <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Settings/CollabSettings.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Views/Adapters/ListAdapters/BaseListAdapter.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Models/Enums/ProjectStatus.cs" />
      <Compile Include="Library/PackageCache/com.unity.collab-proxy@1.15.4/Editor/Collaborate/Components/ChangeListElements/ConflictedChangeListElement.cs" />
@@ -414,29 +414,29 @@
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.YamlDotNet">
+        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
     <Reference Include="unityplastic">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualScripting.IonicZip">
+        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.cinemachine@2.8.2/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.NRefactory">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.render-pipelines.core@10.7.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.YamlDotNet">
-        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualScripting.IonicZip">
-        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.visualscripting@1.7.5/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll</HintPath>
-    </Reference>
-    <Reference Include="clipper_library">
-        <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.cinemachine@2.8.2/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>

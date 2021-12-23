@@ -59,18 +59,18 @@
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/ProjectGeneration/AssemblyNameProvider.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/ProjectGeneration/IFileIO.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/Discovery.cs" />
+     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/ProjectGeneration/ProjectPart.cs" />
+     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/Util/RiderPathUtil.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/UnitTesting/CallbackInitializer.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/Util/SerializableVersion.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/ProjectGeneration/IGUIDGenerator.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/ProjectGeneration/ProjectGeneration.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/ProjectGeneration/IAssemblyNameProvider.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/Util/RiderMenu.cs" />
+     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/RiderStyles.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/LoggingLevel.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/PluginSettings.cs" />
      <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/PostProcessors/RiderAssetPostprocessor.cs" />
-     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/ProjectGeneration/ProjectPart.cs" />
-     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/Util/RiderPathUtil.cs" />
-     <Compile Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/RiderStyles.cs" />
      <None Include="Library/PackageCache/com.unity.ide.rider@3.0.7/Rider/Editor/com.unity.ide.rider.asmdef" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.24f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
