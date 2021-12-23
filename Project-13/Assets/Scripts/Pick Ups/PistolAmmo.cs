@@ -17,8 +17,8 @@ public class PistolAmmo : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider col) {
-        if(col.gameObject.tag == "Player") {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
+        PistolWeapon pistol = col.transform.GetComponent<PistolWeapon>();
+        pistol.AddPistolAmmo();
     }
 }
