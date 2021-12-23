@@ -71,6 +71,7 @@
      <Compile Include="Assets/Scripts/Pick Ups/HealthPickup.cs" />
      <Compile Include="Assets/Prefabs/Package/Scripts/PlayerMovement.cs" />
      <Compile Include="Assets/Scripts/DoNotDestroyMusic.cs" />
+     <None Include="Assets/README.txt" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader" />
