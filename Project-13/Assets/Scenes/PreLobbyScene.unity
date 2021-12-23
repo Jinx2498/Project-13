@@ -198,7 +198,7 @@ MonoBehaviour:
   minPlayers: 1
   roomPlayerPrefab: {fileID: 114033720796874720, guid: deae2134a1d77704b9c595efe69767dd, type: 3}
   RoomScene: Assets/Scenes/LobbyScene.unity
-  GameplayScene: Assets/Scenes/MatchScene.unity
+  GameplayScene: Assets/Scenes/ShootingRange.unity
   _allPlayersReady: 0
   roomSlots: []
   clientIndex: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
   offsetX: 0
   offsetY: 0
   joinAddr: 
-  hostAddrPort: ...
+  hostAddr: 127.0.0.1
   selectedMap: 0
 --- !u!4 &527156778
 Transform:
