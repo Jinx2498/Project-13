@@ -47,8 +47,12 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.ugui\Tests\Editor\Text\FontCreatedByScript.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Editor\EventSystem\InterceptedEventsPreviewTests.cs" />
+     <Compile Include="Packages\com.unity.ugui\Tests\Editor\Slider\SliderRectReferences.cs" />
+     <Compile Include="Packages\com.unity.ugui\Tests\Editor\Canvas\UISystemProfilerAddMarkerWithNullObjectDoesNotCrash.cs" />
+     <Compile Include="Packages\com.unity.ugui\Tests\Editor\Canvas\RootCanvasTests.cs" />
+     <Compile Include="Packages\com.unity.ugui\Tests\Editor\Canvas\CanvasElementsMaintainValidPositionsWhenCameraOrthoSizeIsZero.cs" />
+     <Compile Include="Packages\com.unity.ugui\Tests\Editor\Text\FontCreatedByScript.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Editor\UnityEvent\UnityEventInvoke.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Editor\CanvasRenderer\ParentCanvasIsSane.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Editor\Canvas\CanvasWidthAssertionErrorWithRectTransform.cs" />
@@ -58,11 +62,7 @@
      <Compile Include="Packages\com.unity.ugui\Tests\Editor\RectMask2D\RectMask2DCulling.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Editor\CanvasRenderer\ChangingHierarchyOfCanvasRenderer.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Editor\InputField\CharacterLimitValidation.cs" />
-     <Compile Include="Packages\com.unity.ugui\Tests\Editor\Slider\SliderRectReferences.cs" />
-     <Compile Include="Packages\com.unity.ugui\Tests\Editor\Canvas\UISystemProfilerAddMarkerWithNullObjectDoesNotCrash.cs" />
-     <Compile Include="Packages\com.unity.ugui\Tests\Editor\Canvas\RootCanvasTests.cs" />
      <Compile Include="Packages\com.unity.ugui\Tests\Editor\TestBehaviourBase.cs" />
-     <Compile Include="Packages\com.unity.ugui\Tests\Editor\Canvas\CanvasElementsMaintainValidPositionsWhenCameraOrthoSizeIsZero.cs" />
      <None Include="Packages\com.unity.ugui\Tests\Editor\UnityEditor.UI.EditorTests.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.24f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -47,29 +47,29 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\StartPresenterTests.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestStartModel.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\ChangesModelTests.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\TestChangesView.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestHistoryModel.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\HistoryPresenterTests.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestChangesModel.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\StartModelTests.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\MainPresenterTests.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Scenario\AsyncToCoroutine.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestSourceControlProvider.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\UITestHelpers.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\TestConstants.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\Providers\MockSourceControlProvider.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\TestHistoryView.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Scenario\BasicTests.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestWindowCache.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\StartPresenterTests.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestStartModel.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\TestChangesView.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestHistoryModel.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestChangesModel.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestSourceControlProvider.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\ChangesPresenterTests.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestMainModel.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\TestHistoryView.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\TestStartView.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Presenters\TestMainView.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\TestHelpers.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\TestWindow.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Scenario\BasicTests.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\TestWindowCache.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\ScenarioTestBase.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Models\HistoryModelTests.cs" />
      <None Include="Packages\com.unity.collab-proxy\Tests\Editor\Collaborate\Unity.CollabProxy.EditorTests.asmdef" />

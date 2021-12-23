@@ -47,20 +47,20 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Mock\PlasticApiMock.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\AssetMenu\SelectedAssetGroupInfoTests.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\ProjectDownloader\ParseArgumentsTest.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Views\IncomingChanges\Developer\IsCurrentTests.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Views\IncomingChanges\Developer\UnityIncomingChangesTreeTests.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Mock\BuildWorkspaceTreeNode.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\UI\TextureLoadTests.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Views\IncomingChanges\Developer\IsResolvedTests.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Views\IncomingChanges\Developer\MergetTreeResultMock.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Mock\PlasticApiMock.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\ProjectDownloader\ParseArgumentsTest.cs" />
+     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Views\IncomingChanges\Developer\UnityIncomingChangesTreeTests.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Views\Diff\UnityDiffTreeTests.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\UI\EditorVersionTests.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Views\IncomingChanges\Gluon\UnityIncomingChangesTreeTests.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\UI\TextureLoadTests.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\ProjectDownloader\CommandLineArgumentsTests.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Views\IncomingChanges\Developer\IsResolvedTests.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Views\PendingChanges\UnityPendingChangesTreeTests.cs" />
-     <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Views\IncomingChanges\Developer\MergetTreeResultMock.cs" />
      <Compile Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\AssetMenu\AssetMenuUpdaterTests.cs" />
      <None Include="Packages\com.unity.collab-proxy\Tests\Editor\PlasticSCM\Unity.PlasticSCM.EditorTests.asmdef" />
  <Reference Include="UnityEngine">

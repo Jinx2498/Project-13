@@ -1,0 +1,2 @@
+C:\Users\qlamb\OneDrive\Desktop\Project-13\Project-13\obj\Debug\UnityEditor.UI.csproj.AssemblyReference.cache
+C:\Users\qlamb\OneDrive\Desktop\Project-13\Project-13\obj\Debug\UnityEditor.UI.csproj.CoreCompileInputs.cache

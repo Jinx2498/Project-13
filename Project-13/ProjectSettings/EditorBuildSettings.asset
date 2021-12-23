@@ -6,15 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/PreLobbyScene.unity
-    guid: b961bcba30efb44418561944d838e017
-  - enabled: 1
-    path: Assets/Scenes/LobbyScene.unity
-    guid: f8a5ba2d647a33e49b1905c8b555524d
-  - enabled: 1
-    path: Assets/Scenes/MatchScene.unity
-    guid: 00e68f3ab54cc1e458530b9681c7a4f5
+    path: Assets/Scenes/Help.unity
+    guid: 8a72d2a10269b46f296db245a6adca71
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: dab320ff16aee4e0597dff5c24f62db6
+  - enabled: 1
+    path: Assets/Scenes/Map1.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Map2.unity
+    guid: 848879ffaa50645a991ff7e4670fed9d
+  - enabled: 1
+    path: Assets/Scenes/Map3.unity
+    guid: a726da9fb28944929b43bb4b8cfb39ea
+  - enabled: 1
+    path: Assets/Scenes/Options.unity
+    guid: 7abdb298d14fa424a969db861ba23783
+  - enabled: 1
+    path: Assets/Scenes/ShootingRange.unity
+    guid: 6110187c385e42c49b6c28509a81b125
   m_configObjects: {}

@@ -48,9 +48,9 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Packages\com.unity.timeline\DocCodeExamples\TimelineEditorExamples.cs" />
-     <Compile Include="Packages\com.unity.timeline\DocCodeExamples\TimelineAttributesExamples.cs" />
      <Compile Include="Packages\com.unity.timeline\DocCodeExamples\TrackAssetExamples.cs" />
      <Compile Include="Packages\com.unity.timeline\DocCodeExamples\ActionExamples.cs" />
+     <Compile Include="Packages\com.unity.timeline\DocCodeExamples\TimelineAttributesExamples.cs" />
      <None Include="Packages\com.unity.timeline\DocCodeExamples\DocCodeExamples.asmdef" />
  <Reference Include="UnityEngine">
  <HintPath>/Applications/Unity/Hub/Editor/2020.3.24f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -291,6 +291,9 @@
  </Reference>
  <Reference Include="log4netPlastic">
  <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.collab-proxy@1.15.4/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="ICSharpCode.NRefactory">
+ <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.render-pipelines.core@10.7.0/Editor/ShaderGenerator/ICSharpCode.NRefactory.dll</HintPath>
  </Reference>
  <Reference Include="Newtonsoft.Json">
  <HintPath>/Users/hassanuahmad/Desktop/Project-13/Project-13/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
