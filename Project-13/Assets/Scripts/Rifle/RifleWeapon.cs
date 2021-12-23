@@ -185,7 +185,7 @@ public class RifleWeapon : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
 
-        if (other.gameObject.tag == "rifleAmmo")
+        if (other.gameObject.tag == "RifleAmmo")
         {
             rifleAmmoReserve += 10;
         }
