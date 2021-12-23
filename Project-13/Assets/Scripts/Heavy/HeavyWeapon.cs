@@ -179,10 +179,7 @@ public class HeavyWeapon : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other) {
-
-        if(other.gameObject.tag == "HeavyAmmo") {
-            heavyAmmoReserve += 10;
-        }
+    public void AddHeavyAmmo() {
+        heavyAmmoReserve += 10;
     }
 }

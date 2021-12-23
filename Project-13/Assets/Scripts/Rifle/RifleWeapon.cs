@@ -182,12 +182,7 @@ public class RifleWeapon : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other)
-    {
-
-        if (other.gameObject.tag == "RifleAmmo")
-        {
-            rifleAmmoReserve += 10;
-        }
+    public void AddRifleAmmo() {   
+        rifleAmmoReserve += 10;
     }
 }

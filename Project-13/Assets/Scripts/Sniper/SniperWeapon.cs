@@ -182,12 +182,7 @@ public class SniperWeapon : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other)
-    {
-
-        if (other.gameObject.tag == "SniperAmmo")
-        {
-            sniperAmmoReserve += 10;
-        }
+    public void AddSniperAmmo() {
+        sniperAmmoReserve += 10;
     }
 }

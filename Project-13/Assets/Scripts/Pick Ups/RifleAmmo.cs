@@ -17,8 +17,6 @@ public class RifleAmmo : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider col) {
-        if(col.gameObject.tag == "Player") {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }
