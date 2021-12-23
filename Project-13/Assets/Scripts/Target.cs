@@ -10,7 +10,7 @@ public class Target : MonoBehaviour
     private Transform spawnPoint;
     private Transform playerPos;
 
-    void statrt(){
+    void start(){
 
         playerPos = GameObject.FindGameObjectWithTag("Respawn").transform;
         spawnPoint = GameObject.FindGameObjectWithTag("Player").transform;
