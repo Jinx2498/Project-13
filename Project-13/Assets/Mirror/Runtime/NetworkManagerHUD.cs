@@ -119,6 +119,8 @@ namespace Mirror
                 GUILayout.BeginArea(new Rect(410, 10, 200, 9999));
 
                 GUILayout.Label("-- MATCH SETTINGS --");
+
+                GUILayout.Label("Starting arena:");
                 selectedMap = GUILayout.SelectionGrid(selectedMap, mapNames, 1, "toggle");
 
                 GUILayout.EndArea();

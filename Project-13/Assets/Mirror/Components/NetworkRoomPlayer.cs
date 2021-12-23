@@ -11,6 +11,8 @@ namespace Mirror
     [HelpURL("https://mirror-networking.gitbook.io/docs/components/network-room-player")]
     public class NetworkRoomPlayer : NetworkBehaviour
     {
+        public int team = 0;
+
         /// <summary>
         /// This flag controls whether the default UI is shown for the room player.
         /// <para>As this UI is rendered using the old GUI system, it is only recommended for testing purposes.</para>
@@ -97,7 +99,11 @@ namespace Mirror
         /// </summary>
         /// <param name="oldIndex">The old index value</param>
         /// <param name="newIndex">The new index value</param>
-        public virtual void IndexChanged(int oldIndex, int newIndex) {}
+        public virtual void IndexChanged(int oldIndex, int newIndex)
+        {
+            // auto-assign team
+            team = newIndex % 2;
+        }
 
         /// <summary>
         /// This is a hook that is invoked on clients when a RoomPlayer switches between ready or not ready.
@@ -150,8 +156,8 @@ namespace Mirror
         {
             GUILayout.BeginArea(new Rect(
                 (index + 1) * Screen.width / 6,
-                Screen.height - 150,
-                100, 130
+                Screen.height - 170,
+                160, 9999
             ));
 
             GUILayout.BeginHorizontal();
@@ -166,6 +172,7 @@ namespace Mirror
             GUILayout.FlexibleSpace();
             GUILayout.EndHorizontal();
 
+            // ready/kick button
             if (NetworkClient.active && isLocalPlayer)
             {
                 if (readyToBegin)
@@ -179,7 +186,6 @@ namespace Mirror
                         CmdChangeReadyState(true);
                 }
             }
-
             if (((isServer && index > 0) || isServerOnly) && GUILayout.Button("Kick"))
             {
                 // This button only shows on the Host for all players other than the Host
@@ -187,6 +193,22 @@ namespace Mirror
                 // Host can kick a Player this way.
                 GetComponent<NetworkIdentity>().connectionToClient.Disconnect();
             }
+
+            // change team, character
+            if (!readyToBegin && NetworkClient.active && isLocalPlayer)
+            {
+                GUILayout.BeginHorizontal();
+                if (GUILayout.Button("<")) ;
+                GUILayout.Label("Character");
+                if (GUILayout.Button(">")) ;
+                GUILayout.EndHorizontal();
+                if (GUILayout.Button("Change team")) team = 1 - team;
+            }
+            GUILayout.BeginHorizontal();
+            GUILayout.FlexibleSpace();
+            GUILayout.Label(team == 0 ? "Red team" : "Blue team");
+            GUILayout.FlexibleSpace();
+            GUILayout.EndHorizontal();
 
             GUILayout.EndArea();
         }
